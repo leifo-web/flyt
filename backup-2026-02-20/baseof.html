@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nb-no">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}{{ .Title }} – Flytsonen{{ end }}</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <a href="/">
+        <img src="/logo.svg" alt="flytsonen-logo">
+      </a>
+    </div>
+      <nav class="main-nav">
+        <a href="/arkiv/">Arkiv</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2009 Flytsonen</p>
+    </footer>
+  </body>
+</html>

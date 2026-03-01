@@ -1,0 +1,324 @@
+:root {
+  --red: #d45456;      /* header bakgrunn */
+  --paper: #f4f2ec;    /* bakgrunn tekst */
+  --text: #3B3B3B;
+  --mono: "SF Mono", "Menlo", monospace;
+  --header-text: #e9e3d7;
+}
+
+@font-face {
+  font-family: "CoopBL";
+  src: url("/fonts/COOPBL.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoMonoBold";
+  src: url("/fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--text);
+  font-family: "RobotoMono", "SF Mono", "Menlo", monospace;
+  font-size: 14px;
+  letter-spacing: 0.03em;   /* juster denne verdien */
+}
+
+/* HEADER */
+
+.site-header {
+  background-color: var(--red);
+  color: var(--header-text);
+  height: 50dvh; /* Dynamic viewport height (modern browsers) */  
+  padding: 2rem 4rem 3rem;   /* eller 2rem 1.25rem 2rem hvis du vil kopiere mobilfølelsen */
+  position: relative;
+}
+
+
+/* bare ÉN logo-regel */
+
+.logo {
+  margin: 6rem auto 0;   /* juster 6rem opp/ned til det ser riktig ut */
+  max-width: none;
+}
+
+.logo img {
+  display: block;
+  width: min(100vw, 70rem);
+  height: auto;
+}
+
+a img {
+  border: none;
+  outline: none;
+}
+
+
+
+/* meny øverst til høyre */
+
+.main-nav {
+  position: absolute;
+  top: 1.5rem;
+  right: 7.8rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+}
+
+.main-nav a {
+  color: var(--header-text);
+  text-decoration: none;
+}
+
+/* INNHOLD */
+
+.content {
+  max-width: 42rem;
+  margin: 5rem auto 4rem;
+}
+
+
+.intro-text p {
+  margin: 0 0 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+
+/* TEKST-INNHOLD */
+
+.article-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.article-title {
+  font-family: "RobotoMonoBold", "RobotoMono", monospace;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 2.5rem;
+}
+
+.article-body {
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.article-nav-prev,
+.article-nav-next {
+  text-decoration: none;
+  color: var(--red);      /* rød pil */
+}
+
+/* sørger for venstre/høyre plassering */
+.article-nav-prev {
+  margin-right: auto;
+}
+
+.article-nav-next {
+  margin-left: auto;
+}
+
+
+/* FOOTER */
+
+
+.site-footer {
+  max-width: 640px;
+  margin: 4rem auto 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3B3B3B;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* ekstra justering for artikkel-sider */
+
+.article-page {
+  padding-bottom: 2rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+}
+
+
+/* ARKIV-SIDE */
+
+.archive-page {
+  max-width: 42rem;
+  margin: 5rem auto 4rem;
+  padding: 0 2rem;
+}
+
+.archive-page h1 {
+  font-family: "RobotoMonoBold", "RobotoMono", monospace;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.archive-year {
+  font-family: "RobotoMonoBold", "RobotoMono", monospace;
+  font-size: 0.95rem;
+  margin: 2rem 0 0.6rem;   /* mer luft før, litt mindre etter */
+}
+
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  border-top: 1px solid #ddd;   /* start-linje */
+}
+
+.archive-item {
+  display: flex;
+  align-items: baseline;
+  gap: 5rem;              /* styrer luft mellom dato og tittel */
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.archive-date {
+  min-width: 6rem;        /* fast kolonne for dato */
+}
+
+.archive-link {
+  flex: 1;                /* tittel tar resten av linjen */
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* BILDESIDE */
+
+.image-page {
+  max-width: 60rem;
+  margin: 5rem auto 4rem;
+  padding: 0 2rem 4rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* to kolonner på større skjermer */
+@media (min-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.image-grid img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* variant: bilder som skal være i full bredde på desktop */
+.image-grid .image-item.full {
+  grid-column: 1 / -1;
+}
+
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.image-caption {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+
+/* hårstrek under bildetekst, 70–80 % bredde */
+.image-caption::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #e9e3d7;
+  width: 75%;
+  margin: 0.8rem auto;  /* topp/bunn 0.8rem, auto venstre/høyre */
+}
+
+/* MOBIL-JUSTERINGER (iPhone etc.) */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .site-header {
+  padding: 1.5rem 1.25rem 1.75rem;
+}
+
+.logo {
+  margin: 0.75rem 0 0;
+}
+
+.logo img {
+  width: 220px;
+  max-width: 100%;
+}
+
+
+  .main-nav {
+    top: 0.75rem;
+    right: 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .content,
+  .article-page,
+  .archive-page,
+  .image-page {
+    margin: 2.5rem auto 3rem;
+    padding: 0 1.5rem 3rem;
+  }
+}
+
+/* NØDBREMS: ingen horisontal scroll */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

@@ -1,0 +1,6 @@
+baseURL = "http://localhost/"
+languageCode = "nb-no"
+title = ""
+
+[markup.goldmark.renderer]
+unsafe = true

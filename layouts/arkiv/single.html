@@ -1,0 +1,41 @@
+{{ define "title" }}Arkiv – Flytsonen{{ end }}
+
+{{ define "main" }}
+  <section class="archive-page">
+    <h1>Arkiv</h1>
+
+    {{ $pages := where .Site.RegularPages "Type" "ne" "arkiv" }}
+    {{ range ($pages.ByDate.Reverse).GroupByDate "2006" }}
+      <h2 class="archive-year">{{ .Key }}</h2>
+
+      <ul class="archive-list">
+        {{ range .Pages }}
+          <li class="archive-item">
+            <span class="archive-date">
+  {{ $day := .Date.Format "02" }}
+  {{ $monthNum := .Date.Format "01" }}
+  {{ $year := .Date.Format "2006" }}
+
+  {{ if eq $monthNum "01" }}{{ printf "%s. januar" $day }}{{ end }}
+{{ if eq $monthNum "02" }}{{ printf "%s. februar" $day }}{{ end }}
+{{ if eq $monthNum "03" }}{{ printf "%s. mars" $day }}{{ end }}
+{{ if eq $monthNum "04" }}{{ printf "%s. april" $day }}{{ end }}
+{{ if eq $monthNum "05" }}{{ printf "%s. mai" $day }}{{ end }}
+{{ if eq $monthNum "06" }}{{ printf "%s. juni" $day }}{{ end }}
+{{ if eq $monthNum "07" }}{{ printf "%s. juli" $day }}{{ end }}
+{{ if eq $monthNum "08" }}{{ printf "%s. august" $day }}{{ end }}
+{{ if eq $monthNum "09" }}{{ printf "%s. september" $day }}{{ end }}
+{{ if eq $monthNum "10" }}{{ printf "%s. oktober" $day }}{{ end }}
+{{ if eq $monthNum "11" }}{{ printf "%s. november" $day }}{{ end }}
+{{ if eq $monthNum "12" }}{{ printf "%s. desember" $day }}{{ end }}
+</span>
+
+            <a href="{{ .Permalink }}" class="archive-link">
+              {{ .Title }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+{{ end }}

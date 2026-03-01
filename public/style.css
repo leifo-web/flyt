@@ -1,0 +1,71 @@
+:root {
+  --red: #d45b57;      /* justert senere */
+  --paper: #f4f0e6;   /* lys bakgrunn */
+  --text: #333333;
+  --mono: "SF Mono", "Menlo", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+/* HEADER */
+
+.site-header {
+  background-color: var(--red);
+  color: #f9f3e5;
+  padding: 2rem 4rem 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.main-nav a {
+  color: #f9f3e5;
+  text-decoration: none;
+}
+
+/* INNHOLD */
+
+.content {
+  max-width: 640px;
+  margin: 5rem auto 4rem;
+}
+
+.intro-text p {
+  margin: 0 0 1.2rem;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+.site-footer {
+  max-width: 960px;
+  margin: 4rem auto 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #999999;
+  text-align: center;
+  font-size: 0.8rem;
+}
