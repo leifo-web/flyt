@@ -1,10 +1,35 @@
 :root {
-  --red: #d45456;      /* header bakgrunn */
-  --paper: #f4f2ec;    /* bakgrunn tekst */
+  /* Lys palett (som i dag) */
+  --red: #d45456;
+  --paper: #f4f2ec;
   --text: #3B3B3B;
-  --mono: "SF Mono", "Menlo", monospace;
   --header-text: #e9e3d7;
+
+  /* Mørk palett */
+  --red-dark: #cc241d;
+  --paper-dark: #282828;      /* mørk, men ikke kullsvart */
+  --text-dark: #ebdbb2;
+  --header-text-dark: #fbf1c7;
+
+  --mono: "SF Mono", "Menlo", monospace;
 }
+
+/* Light-mode (default) */
+html[data-theme="light"] {
+  --red-current: var(--red);
+  --paper-current: var(--paper);
+  --text-current: var(--text);
+  --header-text-current: var(--header-text);
+}
+
+/* Dark-mode */
+html[data-theme="dark"] {
+  --red-current: var(--red-dark);
+  --paper-current: var(--paper-dark);
+  --text-current: var(--text-dark);
+  --header-text-current: var(--header-text-dark);
+}
+
 
 @font-face {
   font-family: "CoopBL";
@@ -29,20 +54,22 @@
 
 body {
   margin: 0;
-  background-color: var(--paper);
-  color: var(--text);
+  background-color: var(--paper-current);
+  color: var(--text-current);
   font-family: "RobotoMono", "SF Mono", "Menlo", monospace;
   font-size: 14px;
-  letter-spacing: 0.01em;   /* juster denne verdien */
+  letter-spacing: 0.01em;
 }
+
 
 /* HEADER */
 
 .site-header {
-  background-color: var(--red);
-  color: var(--header-text);
+  background-color: var(--red);            /* var(--red-current) -> var(--red) */
+  color: var(--header-text);               /* var(--header-text-current) -> var(--header-text) */
   height: 60vh;
 }
+
 
 .site-header-inner {
   height: 100%;
@@ -64,11 +91,54 @@ body {
 .main-nav {
   position: absolute;
   top: 1.5rem;
-  right: 8.5rem;
+  right: 9rem;          /* juster ved behov */
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
+
 .main-nav a {
   color: var(--header-text);
   text-decoration: none;
+}
+
+/* skyv toggle helt til høyre inne i nav */
+.theme-toggle {
+  margin-left: auto;
+}
+
+
+.theme-toggle {
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: var(--header-text-current);
+  cursor: pointer;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* Ikoner */
+.theme-icon {
+  display: inline-block;
+}
+
+/* Vis sol i lys modus, måne i mørk */
+html[data-theme="light"] .theme-icon-sun {
+  display: inline-block;
+}
+html[data-theme="light"] .theme-icon-moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-icon-sun {
+  display: none;
+}
+html[data-theme="dark"] .theme-icon-moon {
+  display: inline-block;
 }
 
 /* INNHOLD */
@@ -161,7 +231,7 @@ p:has(> strong) + ul {
 .article-nav-prev,
 .article-nav-next {
   text-decoration: none;
-  color: var(--red);      /* rød pil */
+  color: var(--red-current);
 }
 
 /* sørger for venstre/høyre plassering */
@@ -181,7 +251,7 @@ p:has(> strong) + ul {
   max-width: 640px;
   margin: 4rem auto 1rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #3B3B3B;
+  border-top: 1px solid var(--text-current);
   text-align: center;
   font-size: 0.8rem;
 }
@@ -243,8 +313,8 @@ p:has(> strong) + ul {
 }
 
 .archive-link {
-  flex: 1;                /* tittel tar resten av linjen */
-  color: var(--text);
+  flex: 1;
+  color: var(--text-current);   /* endret fra var(--text) */
   text-decoration: none;
 }
 
@@ -306,9 +376,9 @@ p:has(> strong) + ul {
   content: "";
   display: block;
   height: 1px;
-  background-color: #e9e3d7;
+  background-color: var(--header-text-current);
   width: 75%;
-  margin: 0.8rem auto;  /* topp/bunn 0.8rem, auto venstre/høyre */
+  margin: 0.8rem auto;
 }
 
 /* MOBIL – ingen logo-regel her */

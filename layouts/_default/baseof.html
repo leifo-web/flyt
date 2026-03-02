@@ -1,35 +1,62 @@
 <!DOCTYPE html>
-<html lang="nb-no">
+<html lang="nb-no" data-theme="light">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ block "title" . }}{{ .Title }} – Flytsonen{{ end }}</title>
-  <link rel="stylesheet" href="/styles.css">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Title }} – Flytsonen{{ end }}</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="site-header-inner">
-      <div class="logo">
-        <a href="/">
-          <img src="/logo.svg" alt="flytsonen-logo">
-        </a>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="logo">
+          <a href="/">
+            <img src="/logo.svg" alt="flytsonen-logo">
+          </a>
+        </div>
+
+        <nav class="main-nav">
+           <a href="/arkiv/">Arkiv</a>
+           <!-- ev. flere lenker her -->
+           <button class="theme-toggle" type="button" aria-label="Bytt tema">
+         <span class="theme-icon theme-icon-sun">☀️</span>
+         <span class="theme-icon theme-icon-moon">🌙</span>
+         </button>
+        </nav>
       </div>
+    </header>
 
-      <nav class="main-nav">
-        <a href="/arkiv/">Arkiv</a>
-      </nav>
-    </div>
-  </header>
+    <main class="page">
+      {{ block "main" . }}{{ end }}
+    </main>
 
-  <main class="page">
-  {{ block "main" . }}{{ end }}
-  </main>
+    <footer class="site-footer">
+      <p>© 2009 Flytsonen</p>
+    </footer>
 
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var toggle = document.querySelector('.theme-toggle');
+        if (!toggle) return;
 
-  <footer class="site-footer">
-    <p>© 2009 Flytsonen</p>
-  </footer>
-</body>
+        var stored = localStorage.getItem('theme');
+        if (stored === 'dark' || stored === 'light') {
+          root.setAttribute('data-theme', stored);
+        } else {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            root.setAttribute('data-theme', 'dark');
+          }
+        }
 
+        toggle.addEventListener('click', function () {
+          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+          var next = current === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+      })();
+    </script>
+  </body>
 </html>
