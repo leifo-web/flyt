@@ -1,6 +1,9 @@
-baseURL = "http://localhost/"
+baseURL = "https://fascinating-mochi-d012a6.netlify.app/"
 languageCode = "nb-no"
 title = ""
 
 [markup.goldmark.renderer]
 unsafe = true
+
+
+
