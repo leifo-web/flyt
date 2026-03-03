@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="nb-no">
+<html lang="nb-no" data-theme="light">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slik kutter du snusen! – Flytsonen</title>
-  <link rel="stylesheet" href="/styles.css">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slik kutter du snusen! – Flytsonen</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="site-header-inner">
-      <div class="logo">
-        <a href="/">
-          <img src="/logo.svg" alt="flytsonen-logo">
-        </a>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="logo">
+          <a href="/">
+            <img src="/logo.svg" alt="flytsonen-logo">
+          </a>
+        </div>
+
+        <nav class="main-nav">
+           <a href="/arkiv/">Arkiv</a>
+           
+           <button class="theme-toggle" type="button" aria-label="Bytt tema">
+         <span class="theme-icon theme-icon-sun">☀️</span>
+         <span class="theme-icon theme-icon-moon">🌙</span>
+         </button>
+        </nav>
       </div>
+    </header>
 
-      <nav class="main-nav">
-        <a href="/arkiv/">Arkiv</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page">
-  
+    <main class="page">
+      
   <article class="article-page">
     <h1 class="article-title">Slik kutter du snusen!</h1>
 
     <div class="article-body">
-      <p>Ha, ha, lest det før? Men seriøst… Er det lett å slutte med snus?
+      <p>Ha, ha, lest det før? Men seriøst. . . Er det lett å slutte med snus?
 Godt spørsmål. Det er nok ikke lett, men med få grep så er det i alle fall ikke vanskelig. Hvis du vil.</p>
 <p><strong>Du kan for eksempel:</strong></p>
 <ul>
@@ -36,7 +41,7 @@ Godt spørsmål. Det er nok ikke lett, men med få grep så er det i alle fall i
 <li>utsette når på dagen det er lov å ta første pris. Og stramme inn på kvelden slik at snus-fastetiden blir lengre.</li>
 <li>ikke ta snus etter måltid. Husk bare at det heller ikke er lurt å kaste seg over en sukkertung dessert i stedet. Da er det bedre å gå seg en tur. Alle har godt av frisk luft.</li>
 </ul>
-<p>En coach nær deg vil oppfordre deg til å snakke deg selv opp, eller bort fra snusen. Si noe sånt som dette: jeg er ikke noen snuser, jeg er en som er i god form, jeg er godt trent, jeg driver med meditasjon, jeg er nøye med kroppen min og liker å utvikle psyken min. Jeg er en som spiser sunt, jeg er en som sparer penger… You name it, alt som hjelper deg til å tenke at snus ikke skal forbindes med den du er.</p>
+<p>En coach nær deg vil oppfordre deg til å snakke deg selv opp, eller bort fra snusen. Si noe sånt som dette: jeg er ikke noen snuser, jeg er en som er i god form, jeg er godt trent, jeg driver med meditasjon, jeg er nøye med kroppen min og liker å utvikle psyken min. Jeg er en som spiser sunt, jeg er en som sparer penger. . . You name it, alt som hjelper deg til å tenke at snus ikke skal forbindes med den du er.</p>
 <p>La oss si at du bruker tre, fire bokser i uken. I løpet av 12 måneder uten snus har du spart 20.000 kroner. Ja, det har du. Sett pengene du ikke bruker på snus lenger, på en fet rentekonto, som er like lett å finne som svindyre matvarer i dag. Bonus: de tjuetusen er ikke medregnet rente.</p>
 <p>De som forstår seg på hva nikotin gjør med kroppen forteller at du får sove bedre hvis du slutter med snus. Godt mulig. Det som er helt sikkert er at abstinensene vil melde seg umiddelbart. Det kan være lurt å bruke svimmelheten, kløen i leppen, svettingen, skjelvingene, dårlig konsentrasjon og så videre, som en slags rus. Nyt ubehaget på samme måte som du nøt dagens første pris. Trøsten er at etter 21 dager så er savnet så godt som borte. Abstinensene svekkes etter tre, fire dager.</p>
 <p>Du trenger sikkert ikke flere argumenter for at snus-kutt er bra, men her får du noen flere siden du orket å lese helt hit.
@@ -55,12 +60,34 @@ Det trenger ikke være vanskelig.</p>
     </nav>
   </article>
 
-  </main>
+    </main>
 
+    <footer class="site-footer">
+      <p>© 2009 Flytsonen</p>
+    </footer>
 
-  <footer class="site-footer">
-    <p>© 2009 Flytsonen</p>
-  </footer>
-</body>
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var toggle = document.querySelector('.theme-toggle');
+        if (!toggle) return;
 
+        var stored = localStorage.getItem('theme');
+        if (stored === 'dark' || stored === 'light') {
+          root.setAttribute('data-theme', stored);
+        } else {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            root.setAttribute('data-theme', 'dark');
+          }
+        }
+
+        toggle.addEventListener('click', function () {
+          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+          var next = current === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+      })();
+    </script>
+  </body>
 </html>

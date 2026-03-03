@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://192.168.1.57:1313/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/helse/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tekst/psykologisk-utrygghet/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tekst/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/tekst/ikke-la-deg-lure/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
@@ -12,12 +24,6 @@
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/tags/smart/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tags/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tekst/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/tekst/noen-og-en-v%C3%A6r/</loc>
