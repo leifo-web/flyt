@@ -164,7 +164,7 @@ html[data-theme="dark"] .theme-icon-moon {
 
 .home-hero h1 {
   font-size: 2.4rem;   /* litt større */
-  font-weight: 700;    /* eller 400 hvis du vil ha roligere */
+  font-weight: 400;    /* eller 400 hvis du vil ha roligere */
 }
 
 .home-hero p {
