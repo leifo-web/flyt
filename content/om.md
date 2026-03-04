@@ -1,5 +1,5 @@
 ---
-title: "Om"
+title: ""
 menu:
   main:
     weight: 20
