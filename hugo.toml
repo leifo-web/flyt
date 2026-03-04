@@ -2,8 +2,10 @@ baseURL = "https://flytsonen.no/"
 languageCode = "nb-no"
 title = ""
 
-[markup.goldmark.renderer]
-unsafe = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      typographer = true
 
-
-
+  [markup.goldmark.renderer]
+    unsafe = true
