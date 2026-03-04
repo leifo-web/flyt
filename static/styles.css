@@ -342,42 +342,22 @@ p:has(> strong) + ul {
   padding: 0 2rem 4rem;
 }
 
+/* Én enkel kolonne */
 .image-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-/* to kolonner på større skjermer */
-@media (min-width: 768px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
-}
-
-.image-grid img:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-/* variant: bilder som skal være i full bredde på desktop */
-.image-grid .image-item.full {
-  grid-column: 1 / -1;
+  display: block;   /* eller flex med column hvis du vil */
 }
 
 
 .image-item {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  margin: 2rem 0;
 }
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 .image-caption {
   font-size: 0.8rem;
@@ -393,8 +373,8 @@ p:has(> strong) + ul {
   display: block;
   height: 1px;
   background-color: var(--header-text-current);
-  width: 75%;
-  margin: 0.8rem auto;
+  width: 100%;          /* her endrer du fra 75% til 100% */
+  margin: 0.8rem auto 0;
 }
 
 /* MOBIL – ingen logo-regel her */

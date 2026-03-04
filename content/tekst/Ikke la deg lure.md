@@ -5,7 +5,9 @@ tags: ["smart", "mat"]
 featured_image: ""
 ---
 
-Har du hørt om den fantastiske oppfinnelsen Lékué brødbakersett? Det er en brødform og en sleiv i silikon som vil revolusjonere brødbakingen din. Som vil få deg til å bake brød hver eneste dag. Resten av livet.
+Har du hørt om den fantastiske oppfinnelsen Lékué brødbakersett? Det er en brødform og en sleiv i silikon som vil revolusjonere brødbakingen din. 
+<!--more-->
+Brødbakersettet vil få deg til å bake brød hver eneste dag. Resten av livet.
 
 Eller vil den det?
 

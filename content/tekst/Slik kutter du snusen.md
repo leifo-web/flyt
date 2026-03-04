@@ -6,7 +6,9 @@ featured_image: ""
 ---
 
 Ha, ha, lest det før? Men seriøst. . . Er det lett å slutte med snus?
-Godt spørsmål. Det er nok ikke lett, men med få grep så er det i alle fall ikke vanskelig. Hvis du vil.
+Godt spørsmål. 
+<!--more-->
+Det er nok ikke lett, men med få grep så er det i alle fall ikke vanskelig. Hvis du vil.
 
 **Du kan for eksempel:**
 <ul>

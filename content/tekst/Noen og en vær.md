@@ -6,7 +6,7 @@ featured_image: ""
 ---
 
 Det er sjelden jeg ser noen skrive om hansauen. Det er greit nok. Til gjengjeld ser jeg mange skriver «noen og enhver».
-
+<!--more-->
 Hvorfor gjør de det? Hvorfor plager de oss med dårlig språk? Det heter «noen hver».
 
 Ikke bland med alle og enhver. Bare si, eller skriv, «noen hver». Så enkelt, så perfekt. 

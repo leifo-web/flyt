@@ -8,7 +8,7 @@ featured_image: ""
 Det har gått inflasjon i forhold til bruken av «i forhold til».
 
 Tok du den?
-
+<!--more-->
 Hvis vi beholder "i" og fjerner **«forhold til»** i første setning, så blir den så mye bedre. Og så blir det korrekt norsk. Det er det mange som burde reflektere i forhold til. Orsak, reflektere over.
 
 Det finnes **tilsynelatende** godt utdannede, som konsekvent bruker «i forhold til» både i tale og skrift, når de enkelt kunne brukt en preposisjon. Sykdommen sprer om seg, og det blir bare verre og verre.

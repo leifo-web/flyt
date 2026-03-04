@@ -7,7 +7,7 @@ featured_image: ""
 ---
 
 Hvordan skal du gjøre folk mest mulig utrygg? Oppskriften er svært enkel.
-
+<!--more-->
 Offentlige etater bruker haugevis med penger på innleide konsulenter, til tross for at staten bør og må spare penger. Det finnes sikkert konsulent-honorar som kan forsvares. Jeg kan likevel forsikre deg om at det gjelder langt fra alle. Her skal jeg gi et par eksempler på hvordan det offentlig kaster bort penger på tull. Og psykologisk utrygghet.
 
 En stor offentlig etat har i flere år leid inn ekstern hjelp med håp om å utvikle trygghet for et par nye roller i etaten. La oss kalle ekstern hjelp for «Baugen».
