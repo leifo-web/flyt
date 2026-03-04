@@ -1,9 +1,11 @@
 ---
-title: ""
+title: "Om"
 menu:
   main:
     weight: 20
+layout: om
 ---
+
 der et menneske er helt fortapt i en aktivitet og glemmer tid og sted.
 
 oppstår når det er en balanse mellom de utfordringer som mennesket blir utsatt for og de ferdigheter det har.
