@@ -4,7 +4,7 @@
   <section class="archive-page">
     <h1>Arkiv</h1>
 
-    {{ $pages := where .Site.RegularPages "Type" "ne" "arkiv" "om" }}
+    {{ $pages := where .Site.RegularPages "Type" "ne" "arkiv" }}
     {{ range ($pages.ByDate.Reverse).GroupByDate "2006" }}
       <h2 class="archive-year">{{ .Key }}</h2>
 
