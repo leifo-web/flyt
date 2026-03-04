@@ -347,7 +347,6 @@ p:has(> strong) + ul {
   display: block;   /* eller flex med column hvis du vil */
 }
 
-
 .image-item {
   margin: 2rem 0;
 }
@@ -357,7 +356,6 @@ p:has(> strong) + ul {
   height: auto;
   display: block;
 }
-
 
 .image-caption {
   font-size: 0.8rem;
