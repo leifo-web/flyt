@@ -14,4 +14,4 @@ oppleves som en form for ekstase og en visshet om å lykkes med oppgaven.
 
 gir indre motivasjon i og med at aktiviteten blir et mål og en belønning i seg selv.
 
-flytsonen
+<div style="text-align: right"> flytsonen </div>
