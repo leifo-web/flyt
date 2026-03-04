@@ -156,6 +156,22 @@ html[data-theme="dark"] .theme-icon-moon {
   letter-spacing: 0.03em;
 }
 
+/* Eksempel – juster etter smaken */
+.home-hero {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.home-hero h1 {
+  font-size: 2.4rem;   /* litt større */
+  font-weight: 700;    /* eller 400 hvis du vil ha roligere */
+}
+
+.home-hero p {
+  font-size: 1rem;
+  font-weight: 400;    /* halvfet kan være 500 hvis du har det */
+}
+
 
 /* TEKST-INNHOLD */
 
