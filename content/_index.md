@@ -1,12 +1,8 @@
 ---
-title: "Forside"
+title: "Flytsonen"
 ---
-der et menneske er helt fortapt i en aktivitet og glemmer tid og sted.
 
-oppstår når det er en balanse mellom de utfordringer som mennesket blir utsatt for og de ferdigheter det har.
-
-oppleves som en form for ekstase og en visshet om å lykkes med oppgaven.
-
-gir indre motivasjon i og med at aktiviteten blir et mål og en belønning i seg selv.
-
-flytsonen
+<div class="home-hero">
+  <h1>Design er ikke alt</h1>
+  <p>Alt er ikke design. Denne siden brukes for å teste design og noen tekster.</p>
+</div>
