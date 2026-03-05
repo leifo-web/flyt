@@ -30,7 +30,6 @@ html[data-theme="dark"] {
   --header-text-current: var(--header-text-dark);
 }
 
-
 @font-face {
   font-family: "CoopBL";
   src: url("/fonts/COOPBL.TTF") format("truetype");
@@ -61,7 +60,6 @@ body {
   letter-spacing: 0.01em;
 }
 
-
 /* HEADER */
 
 .site-header {
@@ -69,7 +67,6 @@ body {
   color: var(--header-text);               /* var(--header-text-current) -> var(--header-text) */
   height: 60vh;
 }
-
 
 .site-header-inner {
   height: 100%;
@@ -106,7 +103,6 @@ body {
 .theme-toggle {
   margin-left: auto;
 }
-
 
 .theme-toggle {
   background: none;
@@ -146,9 +142,8 @@ html[data-theme="dark"] .theme-icon-moon {
 .page {
   max-width: 42rem;
   margin: 7rem auto 4rem;  /* avstand fra header ned til innhold */
-  padding: 0 2rem;         /* sideluft */
+  padding: 0 2rem;         /* sideluft desktop */
 }
-
 
 .intro-text p {
   margin: 0 0 1.2rem;
@@ -172,13 +167,12 @@ html[data-theme="dark"] .theme-icon-moon {
   font-weight: 400;    /* halvfet kan være 500 hvis du har det */
 }
 
-
 /* TEKST-INNHOLD */
 
 .article-page {
   max-width: 42rem;
   margin: 0 auto;
-  padding: 0 1rem 1.5rem;
+  padding: 0 2rem 1.5rem;   /* desktop */
 }
 
 .article-title {
@@ -204,7 +198,6 @@ p:has(> strong) {
 p:has(> strong) + ul {
   margin-top: 0;         /* og under lista som kommer rett etterpå */
 }
-
 
 /* Mellomtittel inne i artikkeltekst */
 .article-body h2 {
@@ -236,7 +229,6 @@ p:has(> strong) + ul {
   text-underline-offset: 0.3em;         /* bittelitt mer luft på hover */
 }
 
-
 .article-nav {
   display: flex;
   justify-content: space-between;
@@ -260,9 +252,7 @@ p:has(> strong) + ul {
   margin-left: auto;
 }
 
-
 /* FOOTER */
-
 
 .site-footer {
   max-width: 640px;
@@ -283,7 +273,6 @@ p:has(> strong) + ul {
   margin-top: 2rem;
 }
 
-
 /* ARKIV-SIDE */
 
 .archive-page {
@@ -291,7 +280,6 @@ p:has(> strong) + ul {
   margin: 0 auto;
   padding: 0 2rem;
 }
-
 
 .archive-page h1 {
   font-family: "RobotoMonoBold", "RobotoMono", monospace;
@@ -307,7 +295,6 @@ p:has(> strong) + ul {
   font-size: 0.95rem;
   margin: 2rem 0 0.6rem;   /* mer luft før, litt mindre etter */
 }
-
 
 .archive-list {
   list-style: none;
@@ -376,26 +363,35 @@ p:has(> strong) + ul {
   margin: 0.8rem auto 0;
 }
 
-/* MOBIL – ingen logo-regel her */
+/* MOBIL – felles layout for innhold + footer */
 @media (max-width: 768px) {
   .site-header {
     height: 50svh;
   }
+
   .site-header-inner {
     padding: 1.5rem 1.25rem 1.75rem;
   }
+
   .main-nav {
     top: 1rem;
     right: 2.5rem;
     font-size: 0.85rem;
   }
 
-  .page {
+  .page,
+  .article-page,
+  .archive-page,
+  .image-page {
     margin: 2.5rem auto 1rem;
-    padding: 0 1.5rem 3rem;
+    padding: 0 0.75rem 3rem; /* lik sideluft overalt på mobil */
+  }
+
+  .site-footer {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;  /* footer linjer med innholdet */
   }
 }
-
 
 /* NØDBREMS: ingen horisontal scroll */
 html, body {
