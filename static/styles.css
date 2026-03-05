@@ -10,12 +10,14 @@
   --paper-dark: #282828;      /* mørk, men ikke kullsvart */
   --text-dark: #ebdbb2;
   --header-text-dark: #fbf1c7;
-   --divider-light: #b5b5b5;
+
+  /* Divider */
+  --divider-light: #b5b5b5;
   --divider-dark:  #928374; /* mørkere og roligere i dark-mode */
-}
 
   --mono: "SF Mono", "Menlo", monospace;
 }
+
 
 /* Light-mode (default) */
 html[data-theme="light"] {
