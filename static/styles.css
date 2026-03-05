@@ -145,7 +145,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .image-page {
   max-width: 41.25rem;      /* 660 px */
   margin: 4rem auto 0rem; /* mindre luft under hele blokken */
-  padding: 0 1rem 1rem; /* mindre luft inni nederst */
+  padding: 0 1.5rem 1rem; /* mindre luft inni nederst */
 }
 
 /* Forside-intro (hvis brukt inne i .page) */
