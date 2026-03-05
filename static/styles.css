@@ -257,19 +257,18 @@ p:has(> strong) + ul {
 /* FOOTER – samme kolonnebredde som innhold */
 
 .site-footer {
-  max-width: 41.25rem;
-  margin: 3rem auto 1rem;
-  padding: 1.5rem 1rem 0;
-  border-top: none;                 /* fjern gammel strek */
+  max-width: 41.25rem;      /* samme som innholdet */
+  margin: 3rem auto 1rem;   /* kan være litt annen topp/bunn-luft, det gjør ingenting */
+  padding: 1.5rem 0.6rem 0; /* nøyaktig samme venstre/høyre padding som over */
+  position: relative;
   text-align: center;
   font-size: 0.8rem;
-  position: relative;
 }
 
 .site-footer::before {
   content: "";
   display: block;
-  width: 95%;                       /* prøv 90, evt 95 hvis du vil ha nesten full */
+  width: 100%;                 /* 100 % av footer-boksen */
   height: 1px;
   background-color: var(--text-current);
   margin: 0 auto 1rem;
