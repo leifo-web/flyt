@@ -13,7 +13,7 @@
 
   /* Divider */
   --divider-light: #b5b5b5;
-  --divider-dark:  #928374; /* mørkere og roligere i dark-mode */
+  --divider-dark: #3c3836; /* mørkere og roligere i dark-mode */
 
   --mono: "SF Mono", "Menlo", monospace;
 }
