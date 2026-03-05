@@ -143,9 +143,9 @@ html[data-theme="dark"] .theme-icon-moon {
 .article-page,
 .archive-page,
 .image-page {
-  max-width: 41.25rem;          /* ca. 660 px */
-  margin: 4rem auto 3rem;       /* lik plass over / under */
-  padding: 0 1rem 2.5rem;       /* samme sideluft på mobil og desktop */
+  max-width: 41.25rem;      /* 660 px */
+  margin: 4rem auto 3rem;
+  padding: 0 0.5rem 2.5rem; /* mindre luft, men likt på mobil + desktop */
 }
 
 /* Forside-intro (hvis brukt inne i .page) */
