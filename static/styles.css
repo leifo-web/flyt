@@ -255,7 +255,7 @@ p:has(> strong) + ul {
 /* FOOTER */
 
 .site-footer {
-  max-width: 640px;
+  max-width: 42rem;
   margin: 4rem auto 1rem;
   text-align: center;
   font-size: 0.8rem;
