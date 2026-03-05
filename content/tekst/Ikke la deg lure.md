@@ -24,7 +24,7 @@ Med Lékué brødbakersett slipper du alt dette.
 ## Så lettvint
 Et nært familimedlem solgte inn settet på en mye, mye bedre måte enn internett klarer. Det var så mange lovord. En hel nyttårsfeiring gikk med til lovprising av brødbakersettet.
 
-Denne nære slektningen er den siste vi så for oss skulle bake. Brød. Men nå er han altså begynt med det fordi. . . Ja, fordi Lékué brødbakersett.
+Denne nære slektningen er den siste vi så for oss skulle bake. Brød. Men nå er han altså begynt med det fordi... Ja, fordi Lékué brødbakersett.
 
 – Det er sååå lettvint. Du bare har ingrediensene i formen og rører rundt med en sleiv, hever deigen, setter det i ovnen og steker, og vipps så har du et nydelig nystekt brød. Svisj!
 – Ikke blir det noe oppvask heller.
