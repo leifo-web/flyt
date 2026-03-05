@@ -5,7 +5,7 @@ tags: [«helse»]
 featured_image: ""
 ---
 
-Ha, ha, lest det før? Men seriøst. . . Er det lett å slutte med snus?
+Ha, ha, lest det før? Men seriøst… Er det lett å slutte med snus?
 Godt spørsmål. 
 <!--more-->
 Det er nok ikke lett, men med få grep så er det i alle fall ikke vanskelig. Hvis du vil.
@@ -17,7 +17,7 @@ Det er nok ikke lett, men med få grep så er det i alle fall ikke vanskelig. Hv
 <li>ikke ta snus etter måltid. Husk bare at det heller ikke er lurt å kaste seg over en sukkertung dessert i stedet. Da er det bedre å gå seg en tur. Alle har godt av frisk luft.</li>
 </ul>
 
-En coach nær deg vil oppfordre deg til å snakke deg selv opp, eller bort fra snusen. Si noe sånt som dette: jeg er ikke noen snuser, jeg er en som er i god form, jeg er godt trent, jeg driver med meditasjon, jeg er nøye med kroppen min og liker å utvikle psyken min. Jeg er en som spiser sunt, jeg er en som sparer penger. . . You name it, alt som hjelper deg til å tenke at snus ikke skal forbindes med den du er.
+En coach nær deg vil oppfordre deg til å snakke deg selv opp, eller bort fra snusen. Si noe sånt som dette: jeg er ikke noen snuser, jeg er en som er i god form, jeg er godt trent, jeg driver med meditasjon, jeg er nøye med kroppen min og liker å utvikle psyken min. Jeg er en som spiser sunt, jeg er en som sparer penger... You name it, alt som hjelper deg til å tenke at snus ikke skal forbindes med den du er.
 
 La oss si at du bruker tre, fire bokser i uken. I løpet av 12 måneder uten snus har du spart 20.000 kroner. Ja, det har du. Sett pengene du ikke bruker på snus lenger, på en fet rentekonto, som er like lett å finne som svindyre matvarer i dag. Bonus: de tjuetusen er ikke medregnet rente.
 
