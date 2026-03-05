@@ -193,6 +193,14 @@ html[data-theme="dark"] .theme-icon-moon {
   font-size: 14px;
 }
 
+.article-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+
 /* Ved lister eller oppramsing */
 p:has(> strong) {
   margin-bottom: 0;
