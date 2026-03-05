@@ -143,7 +143,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .article-page,
 .archive-page,
 .image-page {
-  max-width: 41.25rem;      /* 660 px */
+  max-width: 37.5rem;      /* 660 px */
   margin: 4rem auto 0rem; /* mindre luft under hele blokken */
   padding: 0 1.5rem 1rem; /* mindre luft inni nederst */
 }
