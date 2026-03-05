@@ -63,8 +63,8 @@ body {
 /* HEADER */
 
 .site-header {
-  background-color: var(--red);            /* var(--red-current) -> var(--red) */
-  color: var(--header-text);               /* var(--header-text-current) -> var(--header-text) */
+  background-color: var(--red);     /* fast rød header */
+  color: var(--header-text);
   height: 60vh;
 }
 
@@ -74,21 +74,21 @@ body {
   justify-content: center;   /* horisontalt */
   align-items: center;       /* vertikalt   */
   position: relative;
-  padding: 2rem 4rem 3rem;
+  padding: 2rem 4rem 3rem;   /* styrer luft rundt logo og meny */
 }
 
 /* logo alltid nesten full bredde av viewport */
 .logo img {
   display: block;
-  max-width: 80vw;          /* samme på TV, mobil, desktop */
+  max-width: 80vw;
   height: auto;
 }
 
-/* Arkiv oppe til høyre */
+/* Arkiv / meny oppe til høyre */
 .main-nav {
   position: absolute;
   top: 1.5rem;
-  right: 9rem;          /* juster ved behov */
+  right: 9rem;          /* luft mot høyre – juster ved behov */
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -137,13 +137,18 @@ html[data-theme="dark"] .theme-icon-moon {
   display: inline-block;
 }
 
-/* INNHOLD */
+/* FELLES INNHOLDSKOLONNE – 660 px */
 
-.page {
-  max-width: 42rem;
-  margin: 7rem auto 4rem;  /* avstand fra header ned til innhold */
-  padding: 0 2rem;         /* sideluft */
+.page,
+.article-page,
+.archive-page,
+.image-page {
+  max-width: 41.25rem;          /* ca. 660 px */
+  margin: 4rem auto 3rem;       /* lik plass over / under */
+  padding: 0 1rem 2.5rem;       /* samme sideluft på mobil og desktop */
 }
+
+/* Forside-intro (hvis brukt inne i .page) */
 
 .intro-text p {
   margin: 0 0 1.2rem;
@@ -151,29 +156,22 @@ html[data-theme="dark"] .theme-icon-moon {
   letter-spacing: 0.03em;
 }
 
-/* Eksempel – juster etter smaken */
 .home-hero {
   text-align: center;
   margin: 4rem 0;
 }
 
 .home-hero h1 {
-  font-size: 1.4rem;   /* litt større */
-  font-weight: 700;    /* eller 400 hvis du vil ha roligere */
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .home-hero p {
   font-size: 1rem;
-  font-weight: 400;    /* halvfet kan være 500 hvis du har det */
+  font-weight: 400;
 }
 
-/* TEKST-INNHOLD */
-
-.article-page {
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 0 1rem 1.5rem;
-}
+/* ARTIKKEL-TITTEL / BRØDTEKST */
 
 .article-title {
   font-family: "RobotoMonoBold", "RobotoMono", monospace;
@@ -192,11 +190,11 @@ html[data-theme="dark"] .theme-icon-moon {
 
 /* Ved lister eller oppramsing */
 p:has(> strong) {
-  margin-bottom: 0;      /* fjerner lufta under akkurat slike p-er */
+  margin-bottom: 0;
 }
 
 p:has(> strong) + ul {
-  margin-top: 0;         /* og under lista som kommer rett etterpå */
+  margin-top: 0;
 }
 
 /* Mellomtittel inne i artikkeltekst */
@@ -204,30 +202,34 @@ p:has(> strong) + ul {
   font-size: 1rem;
   font-weight: 700;
   margin-top: 2.2rem;
-  margin-bottom: 0;      /* ingen ekstra luft nedover */
-  line-height: 1.2;      /* mer kompakt tittel-linje */
+  margin-bottom: 0;
+  line-height: 1.2;
   letter-spacing: 0.09em;
 }
 
 /* første avsnitt rett etter h2 */
 .article-body h2 + p {
-  margin-top: 0.5rem;    /* mikroluft mellom tittel og tekst */
+  margin-top: 0.5rem;
 }
 
+/* Lenker i brødtekst */
 .article-body a {
-  color: inherit;                       /* samme farge som teksten rundt */
+  color: inherit;
   text-decoration: underline;
-  text-decoration-thickness: 1.5px;    /* tynn, presis strek */
-  text-underline-offset: 0.3em;        /* litt luft mellom tekst og strek */
-  text-decoration-color: #bbbbbb;      /* lys, rolig strek */
-  transition: text-decoration-color 0.15s ease-out,
-              text-underline-offset 0.15s ease-out;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3em;
+  text-decoration-color: #bbbbbb;
+  transition:
+    text-decoration-color 0.15s ease-out,
+    text-underline-offset 0.15s ease-out;
 }
 
 .article-body a:hover {
-  text-decoration-color: #d45456;      /* rød ved hover */
-  text-underline-offset: 0.3em;        /* bittelitt mer luft på hover */
+  text-decoration-color: #d45456;
+  text-underline-offset: 0.3em;
 }
+
+/* Neste/forrige-nav nederst i artikkel */
 
 .article-nav {
   display: flex;
@@ -243,7 +245,6 @@ p:has(> strong) + ul {
   color: var(--red-current);
 }
 
-/* sørger for venstre/høyre plassering */
 .article-nav-prev {
   margin-right: auto;
 }
@@ -252,33 +253,18 @@ p:has(> strong) + ul {
   margin-left: auto;
 }
 
-/* FOOTER */
+/* FOOTER – samme kolonnebredde som innhold */
 
 .site-footer {
-  max-width: 640px;
-  margin: 4rem auto 1rem;
-  padding-top: 1.5rem;
+  max-width: 41.25rem;          /* følger innholdskolonnen */
+  margin: 3rem auto 1rem;
+  padding: 1.5rem 1rem 0;       /* samme sideluft som innholdet */
   border-top: 1px solid var(--text-current);
   text-align: center;
   font-size: 0.8rem;
 }
 
-/* ekstra justering for artikkel-sider */
-.article-page {
-  padding-bottom: 0.1rem;
-}
-
-.site-footer {
-  margin-top: 2rem;
-}
-
 /* ARKIV-SIDE */
-
-.archive-page {
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 
 .archive-page h1 {
   font-family: "RobotoMonoBold", "RobotoMono", monospace;
@@ -292,46 +278,39 @@ p:has(> strong) + ul {
 .archive-year {
   font-family: "RobotoMonoBold", "RobotoMono", monospace;
   font-size: 0.95rem;
-  margin: 2rem 0 0.6rem;   /* mer luft før, litt mindre etter */
+  margin: 2rem 0 0.6rem;
 }
 
 .archive-list {
   list-style: none;
   padding: 0;
   margin: 0 0 2.5rem;
-  border-top: 1px solid #ddd;   /* start-linje */
+  border-top: 1px solid #ddd;
 }
 
 .archive-item {
   display: flex;
   align-items: baseline;
-  gap: 4rem;              /* styrer luft mellom dato og tittel */
+  gap: 4rem;
   padding: 0.9rem 0;
   border-bottom: 1px solid #ddd;
   font-size: 0.9rem;
 }
 
 .archive-date {
-  min-width: 6rem;        /* fast kolonne for dato */
+  min-width: 6rem;
 }
 
 .archive-link {
   flex: 1;
-  color: var(--text-current);   /* endret fra var(--text) */
+  color: var(--text-current);
   text-decoration: none;
 }
 
-/* BILDESIDE */
+/* BILDESIDE – bilder følger samme kolonne */
 
-.image-page {
-  max-width: 60rem;
-  margin: 5rem auto 4rem;
-  padding: 0 2rem 4rem;
-}
-
-/* Én enkel kolonne */
 .image-grid {
-  display: block;   /* eller flex med column hvis du vil */
+  display: block;
 }
 
 .image-item {
@@ -339,7 +318,7 @@ p:has(> strong) + ul {
 }
 
 .image-item img {
-  width: 100%;
+  width: 100%;     /* fyller kolonnebredden */
   height: auto;
   display: block;
 }
@@ -352,17 +331,18 @@ p:has(> strong) + ul {
   position: relative;
 }
 
-/* hårstrek under bildetekst, 70–80 % bredde */
+/* hårstrek under bildetekst, like bred som kolonnen */
 .image-caption::after {
   content: "";
   display: block;
   height: 1px;
   background-color: var(--header-text-current);
-  width: 100%;          /* her endrer du fra 75% til 100% */
+  width: 100%;
   margin: 0.8rem auto 0;
 }
 
-/* MOBIL – ingen logo-regel her */
+/* MOBIL – kun header/meny-justeringer */
+
 @media (max-width: 768px) {
   .site-header {
     height: 50svh;
@@ -376,11 +356,6 @@ p:has(> strong) + ul {
     top: 1rem;
     right: 2.5rem;
     font-size: 0.85rem;
-  }
-
-  .page {
-    margin: 2.5rem auto 1rem;
-    padding: 0 1.5rem 3rem;
   }
 }
 
