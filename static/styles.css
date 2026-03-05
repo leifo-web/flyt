@@ -146,13 +146,11 @@ html[data-theme="dark"] .theme-icon-moon {
 
 /* FELLES INNHOLDSKOLONNE – 660 px */
 
-.page
 .article-page,
-.archive-page,
-.image-page {
-  max-width: 37.5rem;      /* 660 px */
-  margin: 4rem auto 0rem; /* mindre luft under hele blokken */
-  padding: 0 1.5rem 1rem; /* mindre luft inni nederst */
+.archive-page {
+  max-width: 37.5rem;
+  margin: 4rem auto 0rem;
+  padding: 0 1.5rem 1rem;
 }
 
 /* Forside-intro (hvis brukt inne i .page) */
