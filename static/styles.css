@@ -257,10 +257,14 @@ p:has(> strong) + ul {
 .site-footer {
   max-width: 640px;
   margin: 4rem auto 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--text-current);
   text-align: center;
   font-size: 0.8rem;
+}
+
+/* linje + padding flyttes hit */
+.site-footer-inner {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--text-current);
 }
 
 /* ekstra justering for artikkel-sider */
@@ -387,9 +391,9 @@ p:has(> strong) + ul {
     padding: 0 0.75rem 3rem; /* lik sideluft overalt på mobil */
   }
 
-  .site-footer {
+  .site-footer-inner {
     padding-left: 0.75rem;
-    padding-right: 0.75rem;  /* footer linjer med innholdet */
+    padding-right: 0.75rem;
   }
 }
 
