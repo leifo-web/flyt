@@ -261,14 +261,13 @@ p:has(> strong) + ul {
   font-size: 0.8rem;
 }
 
-/* linje + padding flyttes hit */
+/* linje og topp-luft flyttes hit */
 .site-footer-inner {
   padding-top: 1.5rem;
   border-top: 1px solid var(--text-current);
 }
 
 /* ekstra justering for artikkel-sider */
-
 .article-page {
   padding-bottom: 0.1rem;
 }
@@ -276,6 +275,7 @@ p:has(> strong) + ul {
 .site-footer {
   margin-top: 2rem;
 }
+
 
 /* ARKIV-SIDE */
 
@@ -367,7 +367,6 @@ p:has(> strong) + ul {
   margin: 0.8rem auto 0;
 }
 
-/* MOBIL – felles layout for innhold + footer */
 @media (max-width: 768px) {
   .site-header {
     height: 50svh;
@@ -388,9 +387,10 @@ p:has(> strong) + ul {
   .archive-page,
   .image-page {
     margin: 2.5rem auto 1rem;
-    padding: 0 0.75rem 3rem; /* lik sideluft overalt på mobil */
+    padding: 0 0.75rem 3rem;
   }
 
+  /* kun inner får sideluft, så linja matcher teksten */
   .site-footer-inner {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
