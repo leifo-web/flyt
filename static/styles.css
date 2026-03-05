@@ -264,12 +264,13 @@ p:has(> strong) + ul {
 
 .site-footer {
   max-width: 41.25rem;      /* samme som innholdet */
-  margin: 3rem auto 1rem;   /* kan være litt annen topp/bunn-luft, det gjør ingenting */
-  padding: 1.5rem 0.6rem 0; /* nøyaktig samme venstre/høyre padding som over */
+  margin: 3rem auto 1rem;
+  padding: 1.5rem 1.5rem 0; /* SAMME venstre/høyre som .page/.article-page */
   position: relative;
   text-align: center;
   font-size: 0.8rem;
 }
+
 
 .site-footer::before {
   content: "";
