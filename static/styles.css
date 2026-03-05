@@ -269,7 +269,7 @@ p:has(> strong) + ul {
 .site-footer::before {
   content: "";
   display: block;
-  width: 90%;                       /* prøv 90, evt 95 hvis du vil ha nesten full */
+  width: 95%;                       /* prøv 90, evt 95 hvis du vil ha nesten full */
   height: 1px;
   background-color: var(--text-current);
   margin: 0 auto 1rem;
