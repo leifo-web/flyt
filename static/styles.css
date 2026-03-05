@@ -145,7 +145,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .image-page {
   max-width: 41.25rem;      /* 660 px */
   margin: 4rem auto 3rem;
-  padding: 0 0.7rem 2.5rem; /* mindre luft, men likt på mobil + desktop */
+  padding: 0 0.6rem 2.5rem; /* mindre luft, men likt på mobil + desktop */
 }
 
 
@@ -257,13 +257,24 @@ p:has(> strong) + ul {
 /* FOOTER – samme kolonnebredde som innhold */
 
 .site-footer {
-  max-width: 41.25rem;          /* følger innholdskolonnen */
+  max-width: 41.25rem;
   margin: 3rem auto 1rem;
-  padding: 1.5rem 1rem 0;       /* samme sideluft som innholdet */
-  border-top: 1px solid var(--text-current);
+  padding: 1.5rem 1rem 0;
+  border-top: none;                 /* fjern gammel strek */
   text-align: center;
   font-size: 0.8rem;
+  position: relative;
 }
+
+.site-footer::before {
+  content: "";
+  display: block;
+  width: 90%;                       /* prøv 90, evt 95 hvis du vil ha nesten full */
+  height: 1px;
+  background-color: var(--text-current);
+  margin: 0 auto 1rem;
+}
+
 
 /* ARKIV-SIDE */
 
