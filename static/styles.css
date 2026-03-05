@@ -10,6 +10,9 @@
   --paper-dark: #282828;      /* mørk, men ikke kullsvart */
   --text-dark: #ebdbb2;
   --header-text-dark: #fbf1c7;
+   --divider-light: #b5b5b5;
+  --divider-dark:  #928374; /* mørkere og roligere i dark-mode */
+}
 
   --mono: "SF Mono", "Menlo", monospace;
 }
@@ -20,6 +23,7 @@ html[data-theme="light"] {
   --paper-current: var(--paper);
   --text-current: var(--text);
   --header-text-current: var(--header-text);
+  --divider-current: var(--divider-light);
 }
 
 /* Dark-mode */
@@ -28,6 +32,7 @@ html[data-theme="dark"] {
   --paper-current: var(--paper-dark);
   --text-current: var(--text-dark);
   --header-text-current: var(--header-text-dark);
+  --divider-current: var(--divider-dark);
 }
 
 @font-face {
@@ -267,11 +272,12 @@ p:has(> strong) + ul {
 .site-footer::before {
   content: "";
   display: block;
-  width: 100%;                 /* 100 % av footer-boksen */
+  width: 100%;
   height: 1px;
-  background-color: var(--text-current);
+  background-color: var(--divider-current);
   margin: 0 auto 1rem;
 }
+
 
 
 /* ARKIV-SIDE */
@@ -295,7 +301,7 @@ p:has(> strong) + ul {
   list-style: none;
   padding: 0;
   margin: 0 0 2.5rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--divider-current);
 }
 
 .archive-item {
@@ -303,9 +309,10 @@ p:has(> strong) + ul {
   align-items: baseline;
   gap: 4rem;
   padding: 0.9rem 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--divider-current);
   font-size: 0.9rem;
 }
+
 
 .archive-date {
   min-width: 6rem;
@@ -346,10 +353,11 @@ p:has(> strong) + ul {
   content: "";
   display: block;
   height: 1px;
-  background-color: var(--header-text-current);
+  background-color: var(--divider-current);
   width: 100%;
   margin: 0.8rem auto 0;
 }
+
 
 /* MOBIL – kun header/meny-justeringer */
 

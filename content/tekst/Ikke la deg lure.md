@@ -24,7 +24,7 @@ Med Lékué brødbakersett slipper du alt dette.
 ## Så lettvint
 Et nært familimedlem solgte inn settet på en mye, mye bedre måte enn internett klarer. Det var så mange lovord. En hel nyttårsfeiring gikk med til lovprising av brødbakersettet.
 
-Denne nære slektningen er den siste vi så for oss skulle bake. Brød. Men nå er han altså begynt med det fordi... Ja, fordi Lékué brødbakersett.
+Denne nære slektningen er den siste vi så for oss skulle bake. Brød. Men nå er han altså begynt med det fordi… Ja, fordi Lékué brødbakersett.
 
 – Det er sååå lettvint. Du bare har ingrediensene i formen og rører rundt med en sleiv, hever deigen, setter det i ovnen og steker, og vipps så har du et nydelig nystekt brød. Svisj!
 – Ikke blir det noe oppvask heller.
@@ -40,7 +40,7 @@ Hva med det som holdt deg borte fra brødbakingen i mange tiår? Rotet og oppvas
 
 Enten du tror det eller ikke, så må ingrediensene i brød som oftest eltes og knas før heving. Det er bare sånn det er. Det finnes visstnok eltefrie brød, og så finnes det Lékué-sleiv i silikon. Men det er ikke alltid den klarer jobben. Det sier seg selv at en sleiv i mange tilfeller ikke kan konkurrere med elting for hånd, enn si med en kjøkkenmaskin. Ikke tro noe annet.
 
-Hva med oppvasken da, den egentlige grunnen til at du har holdt deg unna brødbaking en halv mannsalder? Vel, tja, hum... Når jeg tenker meg om, så blir den omtrent akkurat som før. Brødformen og silikonsleiven må vaskes etter bruk. To ting som må vaskes. Er det mulig? Dette som var så enkelt.
+Hva med oppvasken da, den egentlige grunnen til at du har holdt deg unna brødbaking en halv mannsalder? Vel, tja, hum… Når jeg tenker meg om, så blir den omtrent akkurat som før. Brødformen og silikonsleiven må vaskes etter bruk. To ting som må vaskes. Er det mulig? Dette som var så enkelt.
 
 Det er bare å innrømme det. Det er ikke oppvasken og rotet som har holdt deg unna brødbakingen i alle år.
 
