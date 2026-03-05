@@ -142,7 +142,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .page {
   max-width: 42rem;
   margin: 7rem auto 4rem;  /* avstand fra header ned til innhold */
-  padding: 0 2rem;         /* sideluft desktop */
+  padding: 0 2rem;         /* sideluft */
 }
 
 .intro-text p {
@@ -172,7 +172,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .article-page {
   max-width: 42rem;
   margin: 0 auto;
-  padding: 0 2rem 1.5rem;   /* desktop */
+  padding: 0 1rem 1.5rem;
 }
 
 .article-title {
@@ -217,16 +217,16 @@ p:has(> strong) + ul {
 .article-body a {
   color: inherit;                       /* samme farge som teksten rundt */
   text-decoration: underline;
-  text-decoration-thickness: 1.5px;       /* tynn, presis strek */
+  text-decoration-thickness: 1.5px;    /* tynn, presis strek */
   text-underline-offset: 0.3em;        /* litt luft mellom tekst og strek */
-  text-decoration-color: #bbbbbb;       /* lys, rolig strek */
+  text-decoration-color: #bbbbbb;      /* lys, rolig strek */
   transition: text-decoration-color 0.15s ease-out,
               text-underline-offset 0.15s ease-out;
 }
 
 .article-body a:hover {
-  text-decoration-color: #d45456;       /* rød ved hover */
-  text-underline-offset: 0.3em;         /* bittelitt mer luft på hover */
+  text-decoration-color: #d45456;      /* rød ved hover */
+  text-underline-offset: 0.3em;        /* bittelitt mer luft på hover */
 }
 
 .article-nav {
@@ -255,16 +255,12 @@ p:has(> strong) + ul {
 /* FOOTER */
 
 .site-footer {
-  max-width: 42rem;
+  max-width: 640px;
   margin: 4rem auto 1rem;
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-/* linje og topp-luft flyttes hit */
-.site-footer-inner {
   padding-top: 1.5rem;
   border-top: 1px solid var(--text-current);
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 /* ekstra justering for artikkel-sider */
@@ -275,7 +271,6 @@ p:has(> strong) + ul {
 .site-footer {
   margin-top: 2rem;
 }
-
 
 /* ARKIV-SIDE */
 
@@ -367,6 +362,7 @@ p:has(> strong) + ul {
   margin: 0.8rem auto 0;
 }
 
+/* MOBIL – ingen logo-regel her */
 @media (max-width: 768px) {
   .site-header {
     height: 50svh;
@@ -382,23 +378,15 @@ p:has(> strong) + ul {
     font-size: 0.85rem;
   }
 
-  .page,
-  .article-page,
-  .archive-page,
-  .image-page {
+  .page {
     margin: 2.5rem auto 1rem;
-    padding: 0 0.75rem 3rem;
-  }
-
-  /* kun inner får sideluft, så linja matcher teksten */
-  .site-footer-inner {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 0 1.5rem 3rem;
   }
 }
 
 /* NØDBREMS: ingen horisontal scroll */
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
