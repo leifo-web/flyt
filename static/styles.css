@@ -183,6 +183,7 @@ html[data-theme="dark"] .theme-icon-moon {
 
 .article-title {
   font-family: "RobotoMonoBold", "RobotoMono", monospace;
+  text-align: center;
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 0.12em;
