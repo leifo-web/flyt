@@ -19,4 +19,4 @@ Flere og flere journalister bruker også uttrykket feil. Det er blitt en landepl
 
 Erfaringen er jo at Språkrådet resignerer når flere og flere bruker språket feil, som for eksempel ordet [forfordele](https://www.sprakradet.no/svardatabase/sporsmal-og-svar/forfordele/) som de færreste bruker rett. Selv om rådet ikke anbefaler det, så kan du bruke "forfordele" som du vil.
 
-Hvis du er i tvil om hva i forhold til betyr og hvordan det brukes, så kan du lære nytt [her](https://beta.ordbokene.no/nob/bm,nn/i%20forhold%20til). og her.
+Hvis du er i tvil om hva i forhold til betyr og hvordan det brukes, så kan du lære nytt [her](https://beta.ordbokene.no/nob/bm,nn/i%20forhold%20til).
