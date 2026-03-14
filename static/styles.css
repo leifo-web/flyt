@@ -104,7 +104,11 @@ body {
 .main-nav a {
   color: var(--header-text);
   text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* ingen font-size her – arver som nå */
 }
+
 
 /* skyv toggle helt til høyre inne i nav */
 .theme-toggle {
