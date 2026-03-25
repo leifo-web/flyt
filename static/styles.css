@@ -45,16 +45,16 @@ html[data-theme="dark"] {
 }
 
 @font-face {
-  font-family: "RobotoMono";
-  src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "GothicA1";
+  src: url("/fonts/GothicA1-Thin.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RobotoMonoBold";
-  src: url("/fonts/RobotoMono-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: "GothicA1";
+  src: url("/fonts/GothicA1-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -62,7 +62,7 @@ body {
   margin: 0;
   background-color: var(--paper-current);
   color: var(--text-current);
-  font-family: "RobotoMono", "SF Mono", "Menlo", monospace;
+  font-family: "GothicA1", sans-serif;  /* Fjern monospace-fallback */
   font-size: 14px;
   letter-spacing: 0.01em;
 }
