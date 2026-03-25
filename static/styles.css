@@ -99,6 +99,7 @@ body {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  font-size: 0.85rem;  /* Ny linje – matcher mobil */
 }
 
 .main-nav a {
@@ -192,13 +193,9 @@ html[data-theme="dark"] .theme-icon-moon {
   margin: 0 0 1.5rem;
 }
 
-.article-body p {
-  font-size: inherit;  /* Sørg for arv */
-}
-
 .article-body {
   line-height: 1.6;
-  font-size: 14px;
+  font-size: inherit;  /* Endre fra 14px til dette */
 }
 
 .article-body img {
