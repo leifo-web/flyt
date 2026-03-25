@@ -63,7 +63,7 @@ body {
   background-color: var(--paper-current);
   color: var(--text-current);
   font-family: "GothicA1", sans-serif;  /* Fjern monospace-fallback */
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.01em;
 }
 
