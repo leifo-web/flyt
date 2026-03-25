@@ -307,7 +307,7 @@ p:has(> strong) + ul {
 
 .archive-year {
   font-family: "GothicA1", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   margin: 2rem 0 0.6rem;
 }
 
@@ -324,7 +324,7 @@ p:has(> strong) + ul {
   gap: 4rem;
   padding: 0.9rem 0;
   border-bottom: 1px solid var(--divider-current);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
