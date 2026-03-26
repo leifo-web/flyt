@@ -43,7 +43,7 @@ html[data-theme="dark"] {
   font-weight: normal;
   font-style: normal;
 }
-
+/* font hentet fra fontshare */
 @font-face {
   font-family: "Excon";
   src: url("/fonts/Excon-Thin.woff2") format("woff2");
@@ -202,7 +202,7 @@ html[data-theme="dark"] .theme-icon-moon {
   font-family: "Excon", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
   font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0 0 1.5rem;
