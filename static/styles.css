@@ -65,6 +65,7 @@ body {
   font-family: "GothicA1", sans-serif;  /* Fjern monospace-fallback */
   font-size: 16px;
   letter-spacing: 0.05em;
+  font-feature-settings: "liga" 0;
 }
 
 /* HEADER */
@@ -396,4 +397,8 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.ellipsis-fix {
+  font-family: "Arial", sans-serif;
 }
