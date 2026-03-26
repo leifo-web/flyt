@@ -79,7 +79,7 @@ body {
   font-family: "Excon", sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
-  font-weight: 300; /* eller 400 hvis du vil ha litt mørkere */
+  font-weight: 400; /* eller 400 hvis du vil ha litt mørkere */
 }
 
 /* HEADER */
@@ -201,7 +201,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .article-title {
   font-family: "Excon", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
-  font-weight: 700;  /* Arver fra WOFF eller bruk bold-fil */
+  font-weight: 100;  /* Arver fra WOFF eller bruk bold-fil */
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
