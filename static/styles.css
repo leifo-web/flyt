@@ -233,7 +233,7 @@ p:has(> strong) + ul {
 /* Mellomtittel inne i artikkeltekst */
 .article-body h2 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 2.2rem;
   margin-bottom: 0;
   line-height: 1.2;
