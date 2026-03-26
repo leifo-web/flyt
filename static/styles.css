@@ -202,8 +202,8 @@ html[data-theme="dark"] .theme-icon-moon {
   font-family: "Excon", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
   font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
-  font-size: 1.6rem;
-  letter-spacing: 0.1em;
+  font-size: 1.8rem;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   margin: 0 0 1.5rem;
 }
