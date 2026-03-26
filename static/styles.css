@@ -203,7 +203,7 @@ html[data-theme="dark"] .theme-icon-moon {
   text-align: center;
   font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
   font-size: 1.8rem;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0 0 1.5rem;
 }
