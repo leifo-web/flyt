@@ -58,14 +58,19 @@ html[data-theme="dark"] {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "EllipsisFix";
+  src: local("Arial");
+  unicode-range: U+2026; /* bare ellipsen */
+}
+
 body {
   margin: 0;
   background-color: var(--paper-current);
   color: var(--text-current);
-  font-family: "GothicA1", sans-serif;  /* Fjern monospace-fallback */
+  font-family: "EllipsisFix", "Gothic A1", system-ui, sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
-  font-feature-settings: "liga" 0;
 }
 
 /* HEADER */
@@ -399,6 +404,3 @@ body {
   overflow-x: hidden;
 }
 
-.ellipsis-fix {
-  font-family: "Arial", sans-serif;
-}
