@@ -45,30 +45,24 @@ html[data-theme="dark"] {
 }
 
 @font-face {
-  font-family: "GothicA1";
-  src: url("/fonts/GothicA1-Thin.woff") format("woff");
+  font-family: "Cantarell";
+  src: url("/fonts/Cantarell-Regular.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GothicA1";
-  src: url("/fonts/GothicA1-Regular.woff") format("woff");
+  font-family: "Cantarell";
+  src: url("/fonts/Cantarell-Bold.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "EllipsisFix";
-  src: local("Arial");
-  unicode-range: U+2026; /* bare ellipsen */
 }
 
 body {
   margin: 0;
   background-color: var(--paper-current);
   color: var(--text-current);
-  font-family: "EllipsisFix", "Gothic A1", system-ui, sans-serif;
+  font-family: "Cantarell", sans-serif;  /* Fjern monospace-fallback */
   font-size: 16px;
   letter-spacing: 0.05em;
 }
@@ -190,7 +184,7 @@ html[data-theme="dark"] .theme-icon-moon {
 /* ARTIKKEL-TITTEL / BRØDTEKST */
 
 .article-title {
-  font-family: "GothicA1", sans-serif;  /* Erstatt RobotoMonoBold */
+  font-family: "Cantarell", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
   font-weight: 700;  /* Arver fra WOFF eller bruk bold-fil */
   font-size: 1.4rem;
@@ -303,7 +297,7 @@ p:has(> strong) + ul {
 /* ARKIV-SIDE */
 
 .archive-page h1 {
-  font-family: "GothicA1", sans-serif;
+  font-family: "Cantarell", sans-serif;
   text-align: center;
   font-size: 22px;
   letter-spacing: 0.1em;
@@ -312,7 +306,7 @@ p:has(> strong) + ul {
 }
 
 .archive-year {
-  font-family: "GothicA1", sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 18px;
   margin: 2rem 0 0.6rem;
 }
