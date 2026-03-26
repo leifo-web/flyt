@@ -77,9 +77,9 @@ body {
   background-color: var(--paper-current);
   color: var(--text-current);
   font-family: "Excon", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0.05em;
-  font-weight: 200; /* eller 400 hvis du vil ha litt mørkere */
+  font-weight: 300; /* eller 400 hvis du vil ha litt mørkere */
 }
 
 /* HEADER */
