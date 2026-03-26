@@ -314,9 +314,9 @@ p:has(> strong) + ul {
 .archive-page h1 {
   font-family: "Excon", sans-serif;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
