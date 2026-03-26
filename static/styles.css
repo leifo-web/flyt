@@ -54,7 +54,7 @@ html[data-theme="dark"] {
 @font-face {
   font-family: "GothicA1";
   src: url("/fonts/GothicA1-Regular.woff") format("woff");
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
