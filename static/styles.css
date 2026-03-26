@@ -77,7 +77,7 @@ body {
   background-color: var(--paper-current);
   color: var(--text-current);
   font-family: "Excon", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: 0.05em;
   font-weight: 300; /* eller 400 hvis du vil ha litt mørkere */
 }
@@ -201,7 +201,7 @@ html[data-theme="dark"] .theme-icon-moon {
 .article-title {
   font-family: "Excon", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
-  font-weight: 300;  /* Arver fra WOFF eller bruk bold-fil */
+  font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -315,7 +315,7 @@ p:has(> strong) + ul {
   font-family: "Excon", sans-serif;
   text-align: center;
   font-size: 22px;
-  font-weight: 300;  /* eller 100 hvis du vil ha veldig tynt */
+  font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 3rem;
@@ -324,7 +324,7 @@ p:has(> strong) + ul {
 .archive-year {
   font-family: "Excon", sans-serif;
   font-size: 18px;
-  font-weight: 300;  /* eller 100 hvis du vil ha veldig tynt */
+  font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
   margin: 2rem 0 0.6rem;
 }
 
