@@ -57,7 +57,7 @@ body {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 17px;
   line-height: 1.55;   /* ca. 26 px */
-  letter-spacing: 0.5em;
+  letter-spacing: 0.05em;
   font-weight: 300;    /* brødtekst */
 }
 
