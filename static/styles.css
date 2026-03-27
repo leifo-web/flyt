@@ -43,32 +43,11 @@ html[data-theme="dark"] {
   font-weight: normal;
   font-style: normal;
 }
-/* font hentet fra fontshare */
+/* Variabel font */
 @font-face {
-  font-family: "Excon";
-  src: url("/fonts/Excon-Thin.woff2") format("woff2");
-  font-weight: 100;   /* Thin */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Excon";
-  src: url("/fonts/Excon-Light.woff2") format("woff2");
-  font-weight: 300;   /* Light */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Excon";
-  src: url("/fonts/Excon-Regular.woff2") format("woff2");
-  font-weight: 400;   /* Regular */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Excon";
-  src: url("/fonts/Excon-Bold.woff2") format("woff2");
-  font-weight: 700;   /* Bold */
+  font-family: "Inter Tight";
+  src: url("/fonts/intertight.woff2") format("woff2-variations");
+  font-weight: 100 900;   /* hele vektspennet */
   font-style: normal;
 }
 
@@ -76,10 +55,10 @@ body {
   margin: 0;
   background-color: var(--paper-current);
   color: var(--text-current);
-  font-family: "Excon", sans-serif;
+  font-family: "Inter Tight", system-ui, sans-serif;
   font-size: 17px;
-  letter-spacing: 0.05em;
-  font-weight: 200; /* eller 400 hvis du vil ha litt mørkere */
+  letter-spacing: 0.01em;
+  font-weight: 400; /* brødtekst */
 }
 
 /* HEADER */
@@ -199,7 +178,7 @@ html[data-theme="dark"] .theme-icon-moon {
 /* ARTIKKEL-TITTEL / BRØDTEKST */
 
 .article-title {
-  font-family: "Excon", sans-serif;  /* Erstatt RobotoMonoBold */
+  font-family: "Inter Tight", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
   font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
   font-size: 28px;
@@ -312,7 +291,7 @@ p:has(> strong) + ul {
 /* ARKIV-SIDE */
 
 .archive-page h1 {
-  font-family: "Excon", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   text-align: center;
   font-size: 28px;
   font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
@@ -322,7 +301,7 @@ p:has(> strong) + ul {
 }
 
 .archive-year {
-  font-family: "Excon", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   font-size: 18px;
   font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
   margin: 2rem 0 0.6rem;
