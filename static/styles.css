@@ -79,7 +79,7 @@ body {
   font-family: "Excon", sans-serif;
   font-size: 17px;
   letter-spacing: 0.05em;
-  font-weight: 200; /* eller 400 hvis du vil ha litt mørkere */
+  font-weight: 400; /* eller 400 hvis du vil ha litt mørkere */
 }
 
 /* HEADER */
@@ -187,8 +187,8 @@ html[data-theme="dark"] .theme-icon-moon {
 }
 
 .home-hero h1 {
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .home-hero p {
@@ -202,7 +202,7 @@ html[data-theme="dark"] .theme-icon-moon {
   font-family: "Excon", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
   font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
-  font-size: 1.8rem;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0 0 1.5rem;
@@ -324,7 +324,7 @@ p:has(> strong) + ul {
 .archive-year {
   font-family: "Excon", sans-serif;
   font-size: 18px;
-  font-weight: 300;  /* eller 100 hvis du vil ha veldig tynt */
+  font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
   margin: 2rem 0 0.6rem;
 }
 
