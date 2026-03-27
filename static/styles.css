@@ -43,11 +43,10 @@ html[data-theme="dark"] {
   font-weight: normal;
   font-style: normal;
 }
-/* Variabel font */
 @font-face {
-  font-family: "Inter Tight";
-  src: url("/fonts/intertight.woff2") format("woff2-variations");
-  font-weight: 100 900;   /* hele vektspennet */
+  font-family: "Inter";
+  src: url("/fonts/Inter-Variable.woff2") format("woff2-variations");
+  font-weight: 100 900;
   font-style: normal;
 }
 
@@ -55,10 +54,11 @@ body {
   margin: 0;
   background-color: var(--paper-current);
   color: var(--text-current);
-  font-family: "Inter Tight", system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 17px;
-  letter-spacing: 0.01em;
-  font-weight: 400; /* brødtekst */
+  line-height: 1.55;   /* ca. 26 px */
+  letter-spacing: 0;
+  font-weight: 400;    /* brødtekst */
 }
 
 /* HEADER */
