@@ -49,7 +49,6 @@ html[data-theme="dark"] {
   font-weight: 100 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Author';
   src: url('/fonts/Author-Variable.woff2') format('woff2');
