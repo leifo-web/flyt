@@ -398,7 +398,7 @@ body {
 .fonttest-block {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border, #eee);
+  border-bottom: 1px solid var(--divider-current);
   font-size: 1.1rem;
   line-height: 1.7;
   max-width: 65ch;
