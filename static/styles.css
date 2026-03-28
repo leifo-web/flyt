@@ -394,3 +394,18 @@ body {
   overflow-x: hidden;
 }
 
+/* ================= Fonttest ======================= */
+.fonttest-block {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border, #eee);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 65ch;
+}
+.fonttest {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+/* ================= Fonttest slutt ======================= */

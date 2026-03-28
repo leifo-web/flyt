@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Helse on</title><link>https://leifo-web.github.io/flyt/tags/helse/</link><description>Recent content in Helse on</description><generator>Hugo</generator><language>nb-no</language><lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://leifo-web.github.io/flyt/tags/helse/index.xml" rel="self" type="application/rss+xml"/><item><title>Psykologisk utrygghet</title><link>https://leifo-web.github.io/flyt/tekst/psykologisk-utrygghet/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://leifo-web.github.io/flyt/tekst/psykologisk-utrygghet/</guid><description>&lt;p&gt;Hvordan skal du gjøre folk mest mulig utrygg? Oppskriften er svært enkel.&lt;/p&gt;
-&lt;p&gt;Offentlige etater bruker haugevis med penger på innleide konsulenter, til tross for at staten bør og må spare penger. Det finnes sikkert konsulent-honorar som kan forsvares. Jeg kan likevel forsikre deg om at det gjelder langt fra alle. Her skal jeg gi et par eksempler på hvordan det offentlig kaster bort penger på tull. Og psykologisk utrygghet.&lt;/p&gt;
-&lt;p&gt;En stor offentlig etat har i flere år leid inn ekstern hjelp med håp om å utvikle trygghet for et par nye roller i etaten. La oss kalle ekstern hjelp for «Baugen».&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helse on </title>
+    <link>http://192.168.1.57:1313/tags/helse/</link>
+    <description>Recent content in Helse on </description>
+    <generator>Hugo</generator>
+    <language>nb-no</language>
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.1.57:1313/tags/helse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Psykologisk utrygghet</title>
+      <link>http://192.168.1.57:1313/tekst/psykologisk-utrygghet/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.57:1313/tekst/psykologisk-utrygghet/</guid>
+      <description>&lt;p&gt;Hvordan skal du gjøre folk mest mulig utrygg? Oppskriften er svært enkel.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
+>
+    </item>
+  </channel>
+</rss>
