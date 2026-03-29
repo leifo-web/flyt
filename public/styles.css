@@ -203,7 +203,7 @@ html[data-theme="dark"] .theme-icon-moon {
 }
 
 .article-body {
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: inherit;  /* Endre fra 14px til dette */
 }
 
@@ -335,7 +335,7 @@ p:has(> strong) + ul {
   gap: 4rem;
   padding: 0.9rem 0;
   border-bottom: 1px solid var(--divider-current);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 
