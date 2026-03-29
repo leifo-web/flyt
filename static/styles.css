@@ -181,7 +181,7 @@ html[data-theme="dark"] .theme-icon-moon {
 }
 
 .home-hero h1 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 400;
 }
 
@@ -196,7 +196,7 @@ html[data-theme="dark"] .theme-icon-moon {
   font-family: "Fraunces", sans-serif;  /* Erstatt RobotoMonoBold */
   text-align: center;
   font-weight: 400;  /* Arver fra WOFF eller bruk bold-fil */
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 0.03em;
 /*  text-transform: uppercase; */
   margin: 0 0 1.5rem;
@@ -308,7 +308,7 @@ p:has(> strong) + ul {
 .archive-page h1 {
   font-family: "Fraunces", sans-serif;
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -317,7 +317,7 @@ p:has(> strong) + ul {
 
 .archive-year {
   font-family: "Fraunces", sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;  /* eller 100 hvis du vil ha veldig tynt */
   margin: 2rem 0 0.6rem;
 }
