@@ -70,10 +70,10 @@ body {
   background-color: var(--paper-current);
   color: var(--text-current);
   font-family: "Fraunces", system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;   /* ca. 26 px */
   letter-spacing: 0.05em;
-  font-weight: 300;    /* brødtekst */
+  font-weight: 400;    /* brødtekst */
 }
 
 /* HEADER */
