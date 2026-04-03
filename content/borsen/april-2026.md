@@ -11,7 +11,7 @@ date: 2026-04-01
   </figure>
 
   <div class="borsen-entry-body">
-    <p><span class="borsen-lead">Apples Little Finder Guy</span> er sett i gul drakt og skal ha blitt observert i området tidligere denne uka. Det har vært spekulert i hvilket eliteserielag Finder Guy holder med. Det ser altså ut til å være et lag i gult. Det kan jo være flere.</p>
+    <p><span class="borsen-lead">Apples Little Finder Guy</span> er sett i gul drakt og skal ha blitt observert i området tidligere denne uka. Det har vært spekulert i hvilket eliteserielag Finder Guy holder med. Det ser altså ut til å være et lag i gult. Det ser altså ut til å være et lag i gult. Da kan det være flere.</p>
   </div>
 </div>
 
