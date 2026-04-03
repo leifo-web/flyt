@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main class="borsen-layout">
+  {{ $pages := .CurrentSection.RegularPages.ByDate.Reverse }}
+
+  <div class="borsen-grid">
+    <aside class="borsen-sidebar">
+      <h2 class="borsen-sidebar-title">Tidligere rykter</h2>
+
+      <ul class="borsen-archive-list">
+        {{ range $pages }}
+          {{ if ne .RelPermalink $.RelPermalink }}
+            <li class="borsen-archive-item">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </aside>
+
+    <div class="borsen-main-column">
+      <header class="borsen-header">
+        <h1>{{ .Title }}</h1>
+      </header>
+
+      <section class="borsen-main">
+        <article class="borsen-current">
+          <div class="borsen-current-content">
+            {{ .Content }}
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</main>
+{{ end }}

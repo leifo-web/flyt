@@ -1,0 +1,27 @@
+{{ $title := .Get "title" | default "" }}
+{{ $sourceUrl := .Get "sourceUrl" | default "" }}
+{{ $sourceLabel := .Get "sourceLabel" | default "Kilde" }}
+{{ $after := .Get "after" | default "" }}
+{{ $quote := trim .InnerDeindent "\r\n " }}
+
+<section class="note-item">
+  {{ if $title }}
+    <h2>{{ $title }}</h2>
+  {{ end }}
+
+  <div class="note-inner">
+    <blockquote class="note-quote"{{ with $sourceUrl }} cite="{{ . }}"{{ end }}>
+      <p>{{ $quote }}</p>
+    </blockquote>
+
+    {{ if $sourceUrl }}
+      <p class="note-source">
+        <a href="{{ $sourceUrl }}" target="_blank" rel="noopener noreferrer">{{ $sourceLabel }}</a>
+      </p>
+    {{ end }}
+  </div>
+
+  {{ if $after }}
+    <p>{{ $after }}</p>
+  {{ end }}
+</section>

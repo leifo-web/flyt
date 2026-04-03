@@ -21,9 +21,10 @@
         </div>
 
         <nav class="main-nav">
+          <a href="/">hjem</a>
           <a href="/om/">om</a>
           <a href="/arkiv/">tekst</a>
-          
+          <a href="/borsen/">børsen</a>
           <button class="theme-toggle" type="button" aria-label="Bytt tema">
             <span class="theme-icon theme-icon-sun">☀️</span>
             <span class="theme-icon theme-icon-moon">🌙</span>
@@ -39,56 +40,81 @@
 
     
     
+    
+
+    
       <h2 class="archive-year">2026</h2>
 
       <ul class="archive-list">
         
           <li class="archive-item">
             <span class="archive-date">
-  
-  
-  
+              
+              
 
-  
+              
+              
+              
+              01. april
+              
+              
+              
+              
+              
+              
+              
+              
+            </span>
 
-02. mars
+            <a href="/tekst/et-liv-uten-apple-watch/" class="archive-link">
+              Et liv uten Apple Watch
+            </a>
+          </li>
+        
+          <li class="archive-item">
+            <span class="archive-date">
+              
+              
 
+              
+              
+              02. mars
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </span>
 
-
-
-
-
-
-
-
-</span>
-
-            <a href="http://192.168.1.57:1313/tekst/psykologisk-utrygghet/" class="archive-link">
+            <a href="/tekst/psykologisk-utrygghet/" class="archive-link">
               Psykologisk utrygghet
             </a>
           </li>
         
           <li class="archive-item">
             <span class="archive-date">
-  
-  
-  
+              
+              
 
-  
-12. februar
+              
+              12. februar
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </span>
 
-
-
-
-
-
-
-
-
-
-</span>
-
-            <a href="http://192.168.1.57:1313/tekst/ikke-la-deg-lure/" class="archive-link">
+            <a href="/tekst/ikke-la-deg-lure/" class="archive-link">
               Ikke la deg lure
             </a>
           </li>
@@ -101,50 +127,48 @@
         
           <li class="archive-item">
             <span class="archive-date">
-  
-  
-  
+              
+              
 
-  
+              
+              
+              
+              20. april
+              
+              
+              
+              
+              
+              
+              
+              
+            </span>
 
-
-20. april
-
-
-
-
-
-
-
-
-</span>
-
-            <a href="http://192.168.1.57:1313/tekst/noen-og-en-v%C3%A6r/" class="archive-link">
+            <a href="/tekst/noen-og-en-v%C3%A6r/" class="archive-link">
               Noen og en vær?
             </a>
           </li>
         
           <li class="archive-item">
             <span class="archive-date">
-  
-  
-  
+              
+              
 
-  
-20. februar
+              
+              20. februar
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </span>
 
-
-
-
-
-
-
-
-
-
-</span>
-
-            <a href="http://192.168.1.57:1313/tekst/i-forhold-til/" class="archive-link">
+            <a href="/tekst/i-forhold-til/" class="archive-link">
               I forhold til
             </a>
           </li>
@@ -157,25 +181,24 @@
         
           <li class="archive-item">
             <span class="archive-date">
-  
-  
-  
+              
+              
 
-  
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              10. oktober
+              
+              
+            </span>
 
-
-
-
-
-
-
-
-10. oktober
-
-
-</span>
-
-            <a href="http://192.168.1.57:1313/tekst/slik-kutter-du-snusen/" class="archive-link">
+            <a href="/tekst/slik-kutter-du-snusen/" class="archive-link">
               Slik kutter du snusen!
             </a>
           </li>
@@ -194,23 +217,44 @@
       (function () {
         var root = document.documentElement;
         var toggle = document.querySelector('.theme-toggle');
-        if (!toggle) return;
+        var storageKey = 'theme';
 
-        var stored = localStorage.getItem('theme');
-        if (stored === 'dark' || stored === 'light') {
-          root.setAttribute('data-theme', stored);
-        } else {
+        function getPreferredTheme() {
           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            root.setAttribute('data-theme', 'dark');
+            return 'dark';
+          }
+          return 'light';
+        }
+
+        function getStoredTheme() {
+          try {
+            return sessionStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
           }
         }
 
-        toggle.addEventListener('click', function () {
-          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-          var next = current === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-        });
+        function storeTheme(value) {
+          try {
+            sessionStorage.setItem(storageKey, value);
+          } catch (error) {}
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+        }
+
+        var storedTheme = getStoredTheme();
+        applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : getPreferredTheme());
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var current = root.getAttribute('data-theme');
+            var next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            storeTheme(next);
+          });
+        }
       })();
     </script>
   </body>

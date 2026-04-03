@@ -1,0 +1,17 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $noborder := .Get "noborder" | default "" }}
+
+<figure class="image-block{{ if eq $noborder "true" }} image-no-border{{ end }}">
+  <img
+    src="/{{ $src }}"
+    alt="{{ $alt }}"
+    loading="lazy"
+    decoding="async"
+  >
+
+  {{ if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+  {{ end }}
+</figure>

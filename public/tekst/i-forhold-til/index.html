@@ -21,9 +21,10 @@
         </div>
 
         <nav class="main-nav">
+          <a href="/">hjem</a>
           <a href="/om/">om</a>
           <a href="/arkiv/">tekst</a>
-          
+          <a href="/borsen/">børsen</a>
           <button class="theme-toggle" type="button" aria-label="Bytt tema">
             <span class="theme-icon theme-icon-sun">☀️</span>
             <span class="theme-icon theme-icon-moon">🌙</span>
@@ -40,11 +41,11 @@
     <div class="article-body">
       <p>Det har gått inflasjon i forhold til bruken av «i forhold til».</p>
 <p>Tok du den?</p>
-<p>Hvis vi beholder &ldquo;i&rdquo; og fjerner <strong>«forhold til»</strong> i første setning, så blir den så mye bedre. Og så blir det korrekt norsk. Det er det mange som burde reflektere i forhold til. Orsak, reflektere over.</p>
+<p>Hvis vi beholder «i» og fjerner <strong>«forhold til»</strong> i første setning, så blir den så mye bedre. Og så blir det korrekt norsk. Det er det mange som burde reflektere i forhold til. Orsak, reflektere over.</p>
 <p>Det finnes <strong>tilsynelatende</strong> godt utdannede, som konsekvent bruker «i forhold til» både i tale og skrift, når de enkelt kunne brukt en preposisjon. Sykdommen sprer om seg, og det blir bare verre og verre.</p>
 <p>Flere og flere journalister bruker også uttrykket feil. Det er blitt en landeplage.</p>
 <p><a href="https://www.sprakradet.no/sprakhjelp/Skriverad/Forholdsregler/">Språkrådet er veldig tydelig</a> på hva som er medisinen mot i forhold til-viruset. Enn så lenge.</p>
-<p>Erfaringen er jo at Språkrådet resignerer når flere og flere bruker språket feil, som for eksempel ordet <a href="https://www.sprakradet.no/svardatabase/sporsmal-og-svar/forfordele/">forfordele</a> som de færreste bruker rett. Selv om rådet ikke anbefaler det, så kan du bruke &ldquo;forfordele&rdquo; som du vil.</p>
+<p>Erfaringen er jo at Språkrådet resignerer når flere og flere bruker språket feil, som for eksempel ordet <a href="https://www.sprakradet.no/svardatabase/sporsmal-og-svar/forfordele/">forfordele</a> som de færreste bruker rett. Selv om rådet ikke anbefaler det, så kan du bruke «forfordele» som du vil.</p>
 <p>Hvis du er i tvil om hva i forhold til betyr og hvordan det brukes, så kan du lære nytt <a href="https://beta.ordbokene.no/nob/bm,nn/i%20forhold%20til">her</a>.</p>
     </div>
 
@@ -68,23 +69,44 @@
       (function () {
         var root = document.documentElement;
         var toggle = document.querySelector('.theme-toggle');
-        if (!toggle) return;
+        var storageKey = 'theme';
 
-        var stored = localStorage.getItem('theme');
-        if (stored === 'dark' || stored === 'light') {
-          root.setAttribute('data-theme', stored);
-        } else {
+        function getPreferredTheme() {
           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            root.setAttribute('data-theme', 'dark');
+            return 'dark';
+          }
+          return 'light';
+        }
+
+        function getStoredTheme() {
+          try {
+            return sessionStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
           }
         }
 
-        toggle.addEventListener('click', function () {
-          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-          var next = current === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-        });
+        function storeTheme(value) {
+          try {
+            sessionStorage.setItem(storageKey, value);
+          } catch (error) {}
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+        }
+
+        var storedTheme = getStoredTheme();
+        applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : getPreferredTheme());
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var current = root.getAttribute('data-theme');
+            var next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            storeTheme(next);
+          });
+        }
       })();
     </script>
   </body>

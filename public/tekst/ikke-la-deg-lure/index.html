@@ -21,9 +21,10 @@
         </div>
 
         <nav class="main-nav">
+          <a href="/">hjem</a>
           <a href="/om/">om</a>
           <a href="/arkiv/">tekst</a>
-          
+          <a href="/borsen/">børsen</a>
           <button class="theme-toggle" type="button" aria-label="Bytt tema">
             <span class="theme-icon theme-icon-sun">☀️</span>
             <span class="theme-icon theme-icon-moon">🌙</span>
@@ -38,7 +39,24 @@
     <h1 class="article-title">Ikke la deg lure</h1>
 
     <div class="article-body">
-      <p>Har du hørt om den fantastiske oppfinnelsen Lékué brødbakersett? Det er en brødform og en sleiv i silikon som vil revolusjonere brødbakingen din.</p>
+      <p>
+
+
+
+
+<figure class="image-block">
+  <img
+    src="/bilder/LekueReven.jpg"
+    alt="Lur som en rev"
+    loading="lazy"
+    decoding="async"
+  >
+
+  
+    <figcaption>Ikke vær lettlurt, vær heller lur som en rev.</figcaption>
+  
+</figure>
+Har du hørt om den fantastiske oppfinnelsen Lékué brødbakersett? Det er en brødform og en sleiv i silikon som vil revolusjonere brødbakingen din.</p>
 <p>Brødbakersettet vil få deg til å bake brød hver eneste dag. Resten av livet.</p>
 <p>Eller vil den det?</p>
 <p>Nei. Det vil den ikke. Denne trenger du ikke.</p>
@@ -84,23 +102,44 @@
       (function () {
         var root = document.documentElement;
         var toggle = document.querySelector('.theme-toggle');
-        if (!toggle) return;
+        var storageKey = 'theme';
 
-        var stored = localStorage.getItem('theme');
-        if (stored === 'dark' || stored === 'light') {
-          root.setAttribute('data-theme', stored);
-        } else {
+        function getPreferredTheme() {
           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            root.setAttribute('data-theme', 'dark');
+            return 'dark';
+          }
+          return 'light';
+        }
+
+        function getStoredTheme() {
+          try {
+            return sessionStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
           }
         }
 
-        toggle.addEventListener('click', function () {
-          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-          var next = current === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-        });
+        function storeTheme(value) {
+          try {
+            sessionStorage.setItem(storageKey, value);
+          } catch (error) {}
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+        }
+
+        var storedTheme = getStoredTheme();
+        applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : getPreferredTheme());
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var current = root.getAttribute('data-theme');
+            var next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            storeTheme(next);
+          });
+        }
       })();
     </script>
   </body>

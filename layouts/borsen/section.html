@@ -1,0 +1,45 @@
+{{ define "main" }}
+<main class="borsen-layout">
+  {{ $pages := .RegularPages.ByDate.Reverse }}
+  {{ $latest := first 1 $pages }}
+  {{ $older := after 1 $pages }}
+
+  <div class="borsen-grid">
+    <aside class="borsen-sidebar">
+      <h2 class="borsen-sidebar-title">Tidligere rykter</h2>
+
+      {{ if gt (len $older) 0 }}
+        <ul class="borsen-archive-list">
+          {{ range $older }}
+            <li class="borsen-archive-item">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </aside>
+
+    <div class="borsen-main-column">
+      <header class="borsen-header">
+        <h1>{{ .Title }}</h1>
+
+        {{ with .Content }}
+          <div class="borsen-intro">
+            {{ . }}
+          </div>
+        {{ end }}
+      </header>
+
+      <section class="borsen-main">
+        {{ range $latest }}
+          <article class="borsen-current">
+            <div class="borsen-current-content">
+              {{ .Content }}
+            </div>
+          </article>
+        {{ end }}
+      </section>
+    </div>
+  </div>
+</main>
+{{ end }}

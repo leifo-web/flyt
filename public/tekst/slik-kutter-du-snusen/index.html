@@ -21,9 +21,10 @@
         </div>
 
         <nav class="main-nav">
+          <a href="/">hjem</a>
           <a href="/om/">om</a>
           <a href="/arkiv/">tekst</a>
-          
+          <a href="/borsen/">børsen</a>
           <button class="theme-toggle" type="button" aria-label="Bytt tema">
             <span class="theme-icon theme-icon-sun">☀️</span>
             <span class="theme-icon theme-icon-moon">🌙</span>
@@ -38,7 +39,24 @@
     <h1 class="article-title">Slik kutter du snusen!</h1>
 
     <div class="article-body">
-      <p>Ha, ha, lest det før? Men seriøst&hellip; Er det lett å slutte med snus?
+      <p>
+
+
+
+
+<figure class="image-block">
+  <img
+    src="/bilder/snus.jpg"
+    alt="Fem snusbokser oppå hverandre"
+    loading="lazy"
+    decoding="async"
+  >
+
+  
+    <figcaption>Det er mye å spare på å gi snusen på båten.</figcaption>
+  
+</figure>
+Ha, ha, lest det før? Men seriøst&hellip; Er det lett å slutte med snus?
 Godt spørsmål.</p>
 <p>Det er nok ikke lett, men med få grep så er det i alle fall ikke vanskelig. Hvis du vil.</p>
 <p><strong>Du kan for eksempel:</strong></p>
@@ -75,23 +93,44 @@ Det trenger ikke være vanskelig.</p>
       (function () {
         var root = document.documentElement;
         var toggle = document.querySelector('.theme-toggle');
-        if (!toggle) return;
+        var storageKey = 'theme';
 
-        var stored = localStorage.getItem('theme');
-        if (stored === 'dark' || stored === 'light') {
-          root.setAttribute('data-theme', stored);
-        } else {
+        function getPreferredTheme() {
           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            root.setAttribute('data-theme', 'dark');
+            return 'dark';
+          }
+          return 'light';
+        }
+
+        function getStoredTheme() {
+          try {
+            return sessionStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
           }
         }
 
-        toggle.addEventListener('click', function () {
-          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-          var next = current === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-        });
+        function storeTheme(value) {
+          try {
+            sessionStorage.setItem(storageKey, value);
+          } catch (error) {}
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+        }
+
+        var storedTheme = getStoredTheme();
+        applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : getPreferredTheme());
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var current = root.getAttribute('data-theme');
+            var next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            storeTheme(next);
+          });
+        }
       })();
     </script>
   </body>

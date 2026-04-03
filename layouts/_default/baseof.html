@@ -21,9 +21,10 @@
         </div>
 
         <nav class="main-nav">
+          <a href="{{ "/" | relURL }}">hjem</a>
           <a href="{{ "om/" | relURL }}">om</a>
           <a href="{{ "arkiv/" | relURL }}">tekst</a>
-          <!-- ev. flere lenker her -->
+          <a href="{{ "borsen/" | relURL }}">børsen</a>
           <button class="theme-toggle" type="button" aria-label="Bytt tema">
             <span class="theme-icon theme-icon-sun">☀️</span>
             <span class="theme-icon theme-icon-moon">🌙</span>
@@ -44,23 +45,44 @@
       (function () {
         var root = document.documentElement;
         var toggle = document.querySelector('.theme-toggle');
-        if (!toggle) return;
+        var storageKey = 'theme';
 
-        var stored = localStorage.getItem('theme');
-        if (stored === 'dark' || stored === 'light') {
-          root.setAttribute('data-theme', stored);
-        } else {
+        function getPreferredTheme() {
           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            root.setAttribute('data-theme', 'dark');
+            return 'dark';
+          }
+          return 'light';
+        }
+
+        function getStoredTheme() {
+          try {
+            return sessionStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
           }
         }
 
-        toggle.addEventListener('click', function () {
-          var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-          var next = current === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-          localStorage.setItem('theme', next);
-        });
+        function storeTheme(value) {
+          try {
+            sessionStorage.setItem(storageKey, value);
+          } catch (error) {}
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+        }
+
+        var storedTheme = getStoredTheme();
+        applyTheme(storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : getPreferredTheme());
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var current = root.getAttribute('data-theme');
+            var next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            storeTheme(next);
+          });
+        }
       })();
     </script>
   </body>

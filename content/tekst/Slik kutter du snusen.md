@@ -5,6 +5,7 @@ tags: [«helse»]
 featured_image: ""
 ---
 
+{{< img src="bilder/snus.jpg" alt="Fem snusbokser oppå hverandre" caption="Det er mye å spare på å gi snusen på båten." >}}
 Ha, ha, lest det før? Men seriøst... Er det lett å slutte med snus?
 Godt spørsmål. 
 <!--more-->
