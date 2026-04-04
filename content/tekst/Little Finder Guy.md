@@ -17,4 +17,4 @@ Finder-maskoten er basert på ikonet til Finder-appen som har vært på Apple si
 
 Det har vært spekulasjoner rundt hvilket norsk favorittlag Little Finder Guy har. Ryktebørsen har tidligere fått rapporter om at Little Finder har blitt sett med gul drakt. Det er jo en draktfarge både Start, Bodø/Glimt og Lillestrøm har.
 
-Med dagens bilde kan det ikke være tvil. Det er Glimt, Nord-Norges stolthet, som supporterne sier, Little Finder Guy har sitt hjerte nærmest.
+Med dagens bilde kan det ikke være tvil. Det er Glimt, og Nord-Norges stolthet som supporterne sier, Little Finder Guy har sitt hjerte nærmest.
