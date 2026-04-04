@@ -2,13 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.1.57:1313/tags/apple/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.1.57:1313/borsen/april-2026/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tekst/et-liv-uten-apple-watch/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/</loc>
@@ -17,16 +11,16 @@
     <loc>http://192.168.1.57:1313/borsen/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.57:1313/tags/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tekst/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.1.57:1313/tags/helse/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/tekst/psykologisk-utrygghet/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tekst/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/borsen/mars-2026/</loc>
@@ -55,6 +49,8 @@
   </url><url>
     <loc>http://192.168.1.57:1313/tekst/slik-kutter-du-snusen/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/apple/</loc>
   </url><url>
     <loc>http://192.168.1.57:1313/arkiv/</loc>
   </url><url>

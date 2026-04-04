@@ -1,6 +1,6 @@
 ---
 title: Et liv uten Apple Watch
-date: 2026-04-01
+date: 2026-04-07
 tags:
   - apple
 featured_image: "image1.jpg"
