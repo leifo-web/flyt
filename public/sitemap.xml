@@ -17,9 +17,6 @@
     <loc>http://192.168.1.57:1313/borsen/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.57:1313/tags/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.1.57:1313/tekst/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -56,14 +53,18 @@
     <loc>http://192.168.1.57:1313/tekst/slik-kutter-du-snusen/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.57:1313/tags/apple/</loc>
-  </url><url>
     <loc>http://192.168.1.57:1313/arkiv/</loc>
   </url><url>
     <loc>http://192.168.1.57:1313/categories/</loc>
   </url><url>
     <loc>http://192.168.1.57:1313/fonttest/</loc>
   </url><url>
+    <loc>http://192.168.1.57:1313/tags/ki/</loc>
+  </url><url>
     <loc>http://192.168.1.57:1313/om/</loc>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/tekno/</loc>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/web/</loc>
   </url>
 </urlset>
