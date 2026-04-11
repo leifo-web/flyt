@@ -1,5 +1,5 @@
 ---
-title: Fem-KI-regler
+title: Fem KI-regler
 date: 2026-04-12
 tags:
   - web
