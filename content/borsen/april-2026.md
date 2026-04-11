@@ -4,6 +4,10 @@ date: 2026-04-01
 ---
 
 
+<div class="borsen-entry">
+<p><span class="borsen-lead">Vanskelig å vite</span> når det spilles Champions League-kamper? Egentlig ikke. Når ManUtd har mandagskamp spilles det europacupkamper samme uke. Tidligere var dette et rykte som kom og gikk, men sånn har det blitt.</p>
+</div>
+
 
 <div class="borsen-entry">
 <p><span class="borsen-lead">PostNord leverte forleden</span> en pakke til riktig tid. Det har Ryktebørsen hørt, så da er det neppe kun løsprat. Vi gratulerer PostNord med en super og veldig uvanlig prestasjon.</p>
