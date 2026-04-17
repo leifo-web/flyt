@@ -5,6 +5,11 @@ date: 2026-04-01
 
 
 <div class="borsen-entry">
+<p><span class="borsen-lead»>– Vi tør ikke.</span> Det er det ærlige svaret fra Avisa Nordlands sportsredaksjonen på spørsmål om hvorfor ingen Glimt-spillere fikk karakteren én på børsen etter kampen mot Viking. Glimt ble rundspilt, nedsablet og smadret av siddisene sist helg. Avisen har tidligere uttalt at de skulle bruke hele børs-skalaen fra en til ti denne sesongen, men motet sviktet. Ifølge ryktene er det redselen for å komme på kant med stjernene som er grunnen til sviktende dømmekraft.</p>
+</div>
+
+
+<div class="borsen-entry">
 <p><span class="borsen-lead">Vanskelig å vite</span> når det spilles Champions League-kamper? Egentlig ikke. Når ManUtd har mandagskamp spilles det europacupkamper samme uke. Tidligere var dette et rykte som kom og gikk, men sånn har det blitt.</p>
 </div>
 
