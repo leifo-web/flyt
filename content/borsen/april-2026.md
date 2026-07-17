@@ -25,3 +25,4 @@ date: 2026-04-01
 <p>Etter at landskampen mot Sveits ble ødelagt av dårlig Ullevaal-matte, skal Solbakken heller bruke sin kompetanse på plantenes vekst og utvikling. Han begynner nord i landet, der han sist er sett med snøskuflen.</p>
 </div>
 
+
