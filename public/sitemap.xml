@@ -2,29 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://192.168.1.57:1313/tags/apple/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tekst/et-liv-uten-apple-watch/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tekst/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/borsen/mai-2026/</loc>
+    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/borsen/</loc>
+    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tekst/fem-ki-regler/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/helse/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/ki/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/tekno/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://192.168.1.57:1313/tags/web/</loc>
+    <lastmod>2026-04-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://192.168.1.57:1313/tekst/little-finder-guy/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/borsen/april-2026/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.1.57:1313/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://192.168.1.57:1313/tags/fotball/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/borsen/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tags/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tekst/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tags/helse/</loc>
-    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://192.168.1.57:1313/tekst/psykologisk-utrygghet/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
@@ -62,12 +83,6 @@
   </url><url>
     <loc>http://192.168.1.57:1313/fonttest/</loc>
   </url><url>
-    <loc>http://192.168.1.57:1313/tags/ki/</loc>
-  </url><url>
     <loc>http://192.168.1.57:1313/om/</loc>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tags/tekno/</loc>
-  </url><url>
-    <loc>http://192.168.1.57:1313/tags/web/</loc>
   </url>
 </urlset>

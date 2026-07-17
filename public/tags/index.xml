@@ -6,20 +6,48 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>nb-no</language>
-    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://192.168.1.57:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fotball</title>
-      <link>http://192.168.1.57:1313/tags/fotball/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.1.57:1313/tags/fotball/</guid>
+      <title>Apple</title>
+      <link>http://192.168.1.57:1313/tags/apple/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.57:1313/tags/apple/</guid>
       <description></description>
     </item>
     <item>
       <title>Helse</title>
       <link>http://192.168.1.57:1313/tags/helse/</link>
-      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://192.168.1.57:1313/tags/helse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KI</title>
+      <link>http://192.168.1.57:1313/tags/ki/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.57:1313/tags/ki/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tekno</title>
+      <link>http://192.168.1.57:1313/tags/tekno/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.57:1313/tags/tekno/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>http://192.168.1.57:1313/tags/web/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.57:1313/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fotball</title>
+      <link>http://192.168.1.57:1313/tags/fotball/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.57:1313/tags/fotball/</guid>
       <description></description>
     </item>
     <item>
@@ -48,27 +76,6 @@
       <link>http://192.168.1.57:1313/tags/helse/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://192.168.1.57:1313/tags/helse/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>KI</title>
-      <link>http://192.168.1.57:1313/tags/ki/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.1.57:1313/tags/ki/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tekno</title>
-      <link>http://192.168.1.57:1313/tags/tekno/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.1.57:1313/tags/tekno/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>http://192.168.1.57:1313/tags/web/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.1.57:1313/tags/web/</guid>
       <description></description>
     </item>
   </channel>

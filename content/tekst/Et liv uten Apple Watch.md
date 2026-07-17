@@ -6,7 +6,7 @@ tags:
 featured_image: "image1.jpg"
 ---
 
-{{< img src="bilder/AWU2.jpg" alt="Apple Watch Ultra 2" caption="Fin klokke, men det går nok bra å leve uten den." >}}
+{{< img src="bilder/AWU2.jpg" alt="Apple Watch Ultra 2" caption="Fin klokke, men det går kanskje bra å leve uten den." >}}
 
 Er det mulig å leve et liv uten Apple Watch hvis du har brukt klokken helt siden den ble lansert for over ti år siden? Det er ikke lett, men det er kanskje mulig.
 <!--more-->
